@@ -1,79 +1,1009 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#111111">
-<title>Modern House | General Contractor</title>
-<style>
-:root {
-  --yellow:#ffd000; --black:#0b0b0b; --gray:#171717; --white:#fff;
-}
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:#fff}
-.wrap{max-width:760px;margin:auto}
-.hero{padding:28px 20px 24px;text-align:center;background:linear-gradient(145deg,#080808,#202020)}
-.logo{width:min(92%,520px);max-height:300px;object-fit:contain;background:#fff;border-radius:10px}
-h1{font-size:30px;margin:22px 0 4px;letter-spacing:.5px}
-.sub{color:var(--yellow);font-weight:800;letter-spacing:2px}
-.owner{margin-top:18px;font-size:20px;font-weight:800}
-.contact{display:grid;gap:10px;margin:20px auto;max-width:460px}
-.btn{display:block;text-decoration:none;padding:15px 18px;border-radius:10px;font-weight:800;font-size:17px}
-.call{background:var(--yellow);color:#000}
-.email{background:#fff;color:#000}
-.section{padding:28px 20px}
-.section h2{font-size:25px;margin:0 0 18px;color:var(--yellow);text-transform:uppercase;letter-spacing:1px}
-.card{background:#171717;border:1px solid #303030;border-radius:14px;padding:8px 18px}
-ul{list-style:none;padding:0;margin:0}
-li{padding:13px 2px;border-bottom:1px solid #303030;font-size:16px;font-weight:700}
-li:last-child{border-bottom:0}
-.dot{color:var(--yellow);margin-right:11px}
-.cta{margin:4px 20px 28px;padding:25px;border-radius:14px;background:var(--yellow);color:#000;text-align:center}
-.cta h2{margin:0 0 8px;font-size:25px}
-.cta p{margin:0 0 16px;font-weight:700}
-.cta a{display:inline-block;background:#000;color:#fff;text-decoration:none;padding:13px 22px;border-radius:9px;font-weight:800}
-.footer{text-align:center;padding:22px;color:#aaa;font-size:13px}
-.small{font-size:14px;color:#bbb}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Modern House General Contractor | El Paso, TX</title>
+
+  <meta name="description"
+    content="Modern House General Contractor provides professional remodeling, epoxy flooring, painting, drywall and renovation services in El Paso, Texas.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #111;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(10, 10, 10, 0.95);
+      border-bottom: 1px solid #333;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: #f5c400;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #f5c400;
+    }
+
+    .nav-button {
+      background: #f5c400;
+      color: #111 !important;
+      padding: 10px 18px;
+      border-radius: 5px;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          rgba(0,0,0,0.72),
+          rgba(0,0,0,0.82)
+        ),
+        url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2000&q=80")
+        center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 1200px;
+      margin: auto;
+      padding: 140px 25px 80px;
+      width: 100%;
+    }
+
+    .hero-label {
+      color: #f5c400;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 82px);
+      line-height: 0.98;
+      max-width: 850px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .hero h1 span {
+      color: #f5c400;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 25px 0;
+      font-size: 19px;
+      color: #ddd;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #f5c400;
+      color: #111;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      background: #ffd633;
+    }
+
+    .btn-secondary {
+      border: 1px solid #fff;
+      color: #fff;
+    }
+
+    .btn-secondary:hover {
+      background: #fff;
+      color: #111;
+    }
+
+    /* =========================
+       STATS
+    ========================= */
+
+    .stats {
+      background: #f5c400;
+      color: #111;
+    }
+
+    .stats-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 25px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+
+    .stat h3 {
+      font-size: 28px;
+      font-weight: 900;
+    }
+
+    .stat p {
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    /* =========================
+       SECTIONS
+    ========================= */
+
+    section {
+      padding: 100px 25px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-label {
+      color: #f5c400;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 900;
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .section-description {
+      color: #aaa;
+      max-width: 700px;
+      margin-bottom: 50px;
+    }
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .services {
+      background: #151515;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .service {
+      background: #202020;
+      border: 1px solid #333;
+      padding: 35px 28px;
+      transition: 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 4px;
+      height: 0;
+      background: #f5c400;
+      transition: 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-7px);
+      border-color: #f5c400;
+    }
+
+    .service:hover::before {
+      height: 100%;
+    }
+
+    .service-number {
+      font-size: 14px;
+      color: #f5c400;
+      font-weight: bold;
+    }
+
+    .service h3 {
+      font-size: 23px;
+      margin: 18px 0 10px;
+    }
+
+    .service p {
+      color: #aaa;
+      font-size: 15px;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about {
+      background: #0c0c0c;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .about-image {
+      min-height: 500px;
+      background:
+        linear-gradient(
+          rgba(0,0,0,0.2),
+          rgba(0,0,0,0.5)
+        ),
+        url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80")
+        center/cover;
+    }
+
+    .about-text p {
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin-top: 25px;
+    }
+
+    .check-list li {
+      margin-bottom: 13px;
+      font-weight: bold;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      color: #f5c400;
+      margin-right: 12px;
+    }
+
+    /* =========================
+       PROJECTS
+    ========================= */
+
+    .projects {
+      background: #151515;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .project {
+      height: 320px;
+      position: relative;
+      overflow: hidden;
+      background: #222;
+    }
+
+    .project img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s;
+    }
+
+    .project:hover img {
+      transform: scale(1.08);
+    }
+
+    .project-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      padding: 25px;
+      background: linear-gradient(
+        transparent,
+        rgba(0,0,0,0.9)
+      );
+    }
+
+    .project-overlay h3 {
+      font-size: 20px;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      background:
+        linear-gradient(
+          rgba(245,196,0,0.93),
+          rgba(245,196,0,0.93)
+        ),
+        url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+      color: #111;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: clamp(35px, 6vw, 60px);
+      line-height: 1;
+      font-weight: 900;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .cta p {
+      margin: 20px auto 30px;
+      max-width: 650px;
+      font-size: 18px;
+    }
+
+    .cta .btn {
+      background: #111;
+      color: #fff;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact {
+      background: #0c0c0c;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .contact-item {
+      border-bottom: 1px solid #333;
+      padding-bottom: 20px;
+    }
+
+    .contact-item small {
+      color: #f5c400;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .contact-item p {
+      margin-top: 5px;
+      color: #ccc;
+    }
+
+    .contact-box {
+      background: #181818;
+      padding: 35px;
+      border: 1px solid #333;
+    }
+
+    .contact-box h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .contact-box p {
+      color: #aaa;
+      margin-bottom: 25px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #050505;
+      border-top: 1px solid #222;
+      padding: 35px 25px;
+      text-align: center;
+      color: #777;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: #fff;
+    }
+
+    /* =========================
+       WHATSAPP
+    ========================= */
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+      font-weight: bold;
+      z-index: 999;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+      transition: 0.3s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.1);
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 800px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .nav {
+        justify-content: center;
+      }
+
+      .hero-content {
+        padding-top: 150px;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .stats-container {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .about-image {
+        min-height: 350px;
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project {
+        height: 280px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 75px 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div class="wrap">
-  <header class="hero">
-    <img class="logo" src="modern-house-logo.jpeg" alt="Modern House General Contractor logo">
-    <h1>Modern House</h1>
-    <div class="sub">GENERAL CONTRACTOR</div>
-    <div class="owner">Kamel Nasr</div>
-    <div class="small">El Paso, Texas</div>
-    <div class="contact">
-      <a class="btn call" href="tel:+19157039824">📞 Call 915-703-9824</a>
-      <a class="btn email" href="mailto:nasrkamel642@gmail.com">✉️ nasrkamel642@gmail.com</a>
-    </div>
+
+  <!-- HEADER -->
+
+  <header>
+    <nav class="nav">
+
+      <div class="logo">
+        MODERN <span>HOUSE</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+        <li>
+          <a href="#contact" class="nav-button">
+            GET A QUOTE
+          </a>
+        </li>
+      </ul>
+
+    </nav>
   </header>
 
-  <section class="section">
-    <h2>Our Services</h2>
-    <div class="card"><ul><li><span class="dot">✓</span>Interior / Exterior Painting</li>
-<li><span class="dot">✓</span>Total Home Renovations</li>
-<li><span class="dot">✓</span>Flooring &amp; Hardwood</li>
-<li><span class="dot">✓</span>Kitchen &amp; Bathroom Remodeling</li>
-<li><span class="dot">✓</span>Siding</li>
-<li><span class="dot">✓</span>Decks &amp; Porches</li>
-<li><span class="dot">✓</span>Carpentry</li>
-<li><span class="dot">✓</span>Basement Finishing &amp; Remodeling</li>
-<li><span class="dot">✓</span>Door &amp; Window Installation</li>
-<li><span class="dot">✓</span>Epoxy Floors</li></ul></div>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="hero-label">
+        General Contractor • El Paso, Texas
+      </div>
+
+      <h1>
+        BUILDING SPACES<br>
+        <span>BUILT TO LAST.</span>
+      </h1>
+
+      <p>
+        Professional remodeling, renovation and specialty flooring
+        solutions designed to transform residential and commercial spaces.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#contact" class="btn btn-primary">
+          REQUEST A FREE ESTIMATE
+        </a>
+
+        <a href="#projects" class="btn btn-secondary">
+          VIEW OUR WORK
+        </a>
+
+      </div>
+
+    </div>
+
   </section>
+
+
+  <!-- STATS -->
+
+  <div class="stats">
+
+    <div class="stats-container">
+
+      <div class="stat">
+        <h3>QUALITY</h3>
+        <p>Professional Work</p>
+      </div>
+
+      <div class="stat">
+        <h3>DETAIL</h3>
+        <p>Precision Finishes</p>
+      </div>
+
+      <div class="stat">
+        <h3>TRUST</h3>
+        <p>Customer Focused</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- SERVICES -->
+
+  <section class="services" id="services">
+
+    <div class="container">
+
+      <div class="section-label">
+        What We Do
+      </div>
+
+      <h2 class="section-title">
+        COMPLETE<br>
+        CONTRACTOR SERVICES
+      </h2>
+
+      <p class="section-description">
+        From complete renovations to specialty flooring and professional
+        finishes, Modern House General Contractor brings your project
+        together under one team.
+      </p>
+
+
+      <div class="services-grid">
+
+        <div class="service">
+          <span class="service-number">01</span>
+          <h3>General Remodeling</h3>
+          <p>
+            Professional remodeling solutions for residential and commercial
+            properties.
+          </p>
+        </div>
+
+        <div class="service">
+          <span class="service-number">02</span>
+          <h3>Epoxy Flooring</h3>
+          <p>
+            High-end epoxy flooring including flake, marble and decorative
+            finishes.
+          </p>
+        </div>
+
+        <div class="service">
+          <span class="service-number">03</span>
+          <h3>Urethane Coating</h3>
+          <p>
+            Durable protective coatings designed for demanding environments.
+          </p>
+        </div>
+
+        <div class="service">
+          <span class="service-number">04</span>
+          <h3>Painting</h3>
+          <p>
+            Interior and exterior painting with professional preparation
+            and clean finishes.
+          </p>
+        </div>
+
+        <div class="service">
+          <span class="service-number">05</span>
+          <h3>Drywall</h3>
+          <p>
+            Installation, repairs, finishing and preparation for a clean
+            professional result.
+          </p>
+        </div>
+
+        <div class="service">
+          <span class="service-number">06</span>
+          <h3>Commercial Projects</h3>
+          <p>
+            Remodeling and improvement solutions for commercial properties
+            and businesses.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+
+    <div class="container">
+
+      <div class="about-grid">
+
+        <div class="about-image"></div>
+
+        <div class="about-text">
+
+          <div class="section-label">
+            Why Modern House
+          </div>
+
+          <h2 class="section-title">
+            BUILT WITH<br>
+            PURPOSE.
+          </h2>
+
+          <p>
+            Modern House General Contractor was built around one simple idea:
+            deliver professional construction and remodeling work with
+            attention to detail.
+          </p>
+
+          <p>
+            We work with homeowners, property owners and businesses
+            throughout El Paso, Texas.
+          </p>
+
+          <ul class="check-list">
+            <li>Professional workmanship</li>
+            <li>Quality materials</li>
+            <li>Attention to detail</li>
+            <li>Residential & Commercial</li>
+            <li>Free estimates</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROJECTS -->
+
+  <section class="projects" id="projects">
+
+    <div class="container">
+
+      <div class="section-label">
+        Our Work
+      </div>
+
+      <h2 class="section-title">
+        PROJECTS THAT<br>
+        SPEAK FOR THEMSELVES.
+      </h2>
+
+      <p class="section-description">
+        A selection of the type of work Modern House General Contractor
+        provides.
+      </p>
+
+      <div class="projects-grid">
+
+        <div class="project">
+
+          <img
+            src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80"
+            alt="Interior remodeling project">
+
+          <div class="project-overlay">
+            <h3>Interior Remodeling</h3>
+          </div>
+
+        </div>
+
+
+        <div class="project">
+
+          <img
+            src="https://images.unsplash.com/photo-1560185008-b033106af5c3?auto=format&fit=crop&w=1000&q=80"
+            alt="Modern home renovation">
+
+          <div class="project-overlay">
+            <h3>Modern Renovation</h3>
+          </div>
+
+        </div>
+
+
+        <div class="project">
+
+          <img
+            src="https://images.unsplash.com/photo-1564540583246-934409427776?auto=format&fit=crop&w=1000&q=80"
+            alt="Professional construction">
+
+          <div class="project-overlay">
+            <h3>Commercial Improvement</h3>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
 
   <section class="cta">
-    <h2>Ready to start your project?</h2>
-    <p>Contact Modern House for a free estimate.</p>
-    <a href="tel:+19157039824">GET A FREE ESTIMATE</a>
+
+    <h2>
+      READY TO TRANSFORM YOUR SPACE?
+    </h2>
+
+    <p>
+      Tell us about your project and let's discuss how Modern House
+      General Contractor can bring it to life.
+    </p>
+
+    <a href="#contact" class="btn">
+      GET YOUR FREE ESTIMATE
+    </a>
+
   </section>
 
-  <footer class="footer">
-    Modern House General Contractor · El Paso, TX<br>
-    Kamel Nasr · 915-703-9824
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+
+    <div class="container">
+
+      <div class="section-label">
+        Contact
+      </div>
+
+      <h2 class="section-title">
+        LET'S BUILD<br>
+        SOMETHING GREAT.
+      </h2>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+
+          <div class="contact-item">
+            <small>Company</small>
+            <p>Modern House General Contractor</p>
+          </div>
+
+          <div class="contact-item">
+            <small>Service Area</small>
+            <p>El Paso, Texas</p>
+          </div>
+
+          <div class="contact-item">
+            <small>Estimates</small>
+            <p>Free Estimates Available</p>
+          </div>
+
+          <div class="contact-item">
+            <small>Phone</small>
+
+            <p>
+              <a href="tel:+19157039824">
+                (915) 703-9824
+              </a>
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-box">
+
+          <h3>START YOUR PROJECT</h3>
+
+          <p>
+            Contact Modern House General Contractor today for a free estimate
+            and let's talk about your next project.
+          </p>
+
+          <a
+            href="https://wa.me/19157039824"
+            class="btn btn-primary"
+            target="_blank">
+            CONTACT US ON WHATSAPP
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 <strong>Modern House General Contractor</strong>.
+      All Rights Reserved.
+    </p>
+
+    <p>
+      El Paso, Texas
+    </p>
+
+    <p>
+      (915) 703-9824
+    </p>
+
   </footer>
-</div>
+
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+
+  <a
+    href="https://wa.me/19157039824"
+    class="whatsapp"
+    target="_blank"
+    aria-label="Contact Modern House on WhatsApp">
+    ☎
+  </a>
+
 </body>
 </html>
