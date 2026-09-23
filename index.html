@@ -32,10 +32,6 @@
       color: inherit;
     }
 
-    /* =========================
-       HEADER
-    ========================= */
-
     header {
       position: fixed;
       top: 0;
@@ -68,8 +64,9 @@
 
     .nav-links {
       display: flex;
-      gap: 28px;
+      gap: 25px;
       list-style: none;
+      align-items: center;
     }
 
     .nav-links a {
@@ -89,9 +86,7 @@
       border-radius: 5px;
     }
 
-    /* =========================
-       HERO
-    ========================= */
+    /* HERO */
 
     .hero {
       min-height: 100vh;
@@ -179,9 +174,7 @@
       color: #111;
     }
 
-    /* =========================
-       STATS
-    ========================= */
+    /* STATS */
 
     .stats {
       background: #f5c400;
@@ -209,9 +202,7 @@
       text-transform: uppercase;
     }
 
-    /* =========================
-       SECTIONS
-    ========================= */
+    /* SECTIONS */
 
     section {
       padding: 100px 25px;
@@ -244,9 +235,7 @@
       margin-bottom: 50px;
     }
 
-    /* =========================
-       SERVICES
-    ========================= */
+    /* SERVICES */
 
     .services {
       background: #151515;
@@ -303,9 +292,7 @@
       font-size: 15px;
     }
 
-    /* =========================
-       ABOUT
-    ========================= */
+    /* ABOUT */
 
     .about {
       background: #0c0c0c;
@@ -350,9 +337,7 @@
       margin-right: 12px;
     }
 
-    /* =========================
-       PROJECTS
-    ========================= */
+    /* PROJECTS */
 
     .projects {
       background: #151515;
@@ -399,8 +384,81 @@
     }
 
     /* =========================
-       CTA
+       EPOXY FLOORS
     ========================= */
+
+    .epoxy {
+      background: #0c0c0c;
+    }
+
+    .epoxy-intro {
+      max-width: 800px;
+      margin-bottom: 45px;
+    }
+
+    .epoxy-intro p {
+      color: #aaa;
+      font-size: 17px;
+    }
+
+    .epoxy-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .epoxy-card {
+      position: relative;
+      height: 360px;
+      overflow: hidden;
+      background: #1a1a1a;
+      border: 1px solid #333;
+    }
+
+    .epoxy-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .epoxy-card:hover img {
+      transform: scale(1.08);
+    }
+
+    .epoxy-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      padding: 25px;
+      background: linear-gradient(
+        transparent 40%,
+        rgba(0,0,0,0.9)
+      );
+    }
+
+    .epoxy-overlay h3 {
+      font-size: 20px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .epoxy-overlay span {
+      display: block;
+      color: #f5c400;
+      font-size: 12px;
+      margin-top: 4px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .epoxy-cta {
+      margin-top: 40px;
+    }
+
+    /* CTA */
 
     .cta {
       background:
@@ -433,9 +491,7 @@
       color: #fff;
     }
 
-    /* =========================
-       CONTACT
-    ========================= */
+    /* CONTACT */
 
     .contact {
       background: #0c0c0c;
@@ -485,9 +541,7 @@
       margin-bottom: 25px;
     }
 
-    /* =========================
-       FOOTER
-    ========================= */
+    /* FOOTER */
 
     footer {
       background: #050505;
@@ -502,9 +556,7 @@
       color: #fff;
     }
 
-    /* =========================
-       WHATSAPP
-    ========================= */
+    /* WHATSAPP */
 
     .whatsapp {
       position: fixed;
@@ -529,9 +581,7 @@
       transform: scale(1.1);
     }
 
-    /* =========================
-       MOBILE
-    ========================= */
+    /* MOBILE */
 
     @media (max-width: 800px) {
 
@@ -580,6 +630,14 @@
         height: 280px;
       }
 
+      .epoxy-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .epoxy-card {
+        height: 330px;
+      }
+
       .contact-grid {
         grid-template-columns: 1fr;
       }
@@ -603,16 +661,33 @@
       </div>
 
       <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+        <li>
+          <a href="#services">Services</a>
+        </li>
+
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+
+        <li>
+          <a href="#epoxy">Epoxy Floors</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
 
         <li>
           <a href="#contact" class="nav-button">
             GET A QUOTE
           </a>
         </li>
+
       </ul>
 
     </nav>
@@ -702,7 +777,6 @@
         finishes, Modern House General Contractor brings your project
         together under one team.
       </p>
-
 
       <div class="services-grid">
 
@@ -849,7 +923,6 @@
 
         </div>
 
-
         <div class="project">
 
           <img
@@ -862,7 +935,6 @@
 
         </div>
 
-
         <div class="project">
 
           <img
@@ -874,6 +946,136 @@
           </div>
 
         </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EPOXY FLOORS -->
+
+  <section class="epoxy" id="epoxy">
+
+    <div class="container">
+
+      <div class="section-label">
+        Epoxy Floors
+      </div>
+
+      <h2 class="section-title">
+        PREMIUM<br>
+        EPOXY FLOORING.
+      </h2>
+
+      <div class="epoxy-intro">
+
+        <p>
+          Transform your garage, commercial space or property with
+          professional epoxy flooring designed for durability,
+          style and a high-end finish.
+        </p>
+
+      </div>
+
+      <div class="epoxy-grid">
+
+        <div class="epoxy-card">
+          <img
+            src="images/epoxy-1.jpeg"
+            alt="Professional epoxy flooring">
+          <div class="epoxy-overlay">
+            <div>
+              <h3>Epoxy Flooring</h3>
+              <span>PROFESSIONAL FINISH</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="epoxy-card">
+          <img
+            src="images/epoxy-2.jpeg"
+            alt="Decorative epoxy floor">
+          <div class="epoxy-overlay">
+            <div>
+              <h3>Decorative Epoxy</h3>
+              <span>PREMIUM FINISH</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="epoxy-card">
+          <img
+            src="images/epoxy-3.jpeg"
+            alt="Epoxy flake flooring">
+          <div class="epoxy-overlay">
+            <div>
+              <h3>Epoxy Flake</h3>
+              <span>DURABLE • PROFESSIONAL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="epoxy-card">
+          <img
+            src="images/epoxy-4.jpeg"
+            alt="Garage epoxy flooring">
+          <div class="epoxy-overlay">
+            <div>
+              <h3>Garage Flooring</h3>
+              <span>BUILT TO LAST</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="epoxy-card">
+          <img
+            src="images/epoxy-5.jpeg"
+            alt="Custom epoxy floor">
+          <div class="epoxy-overlay">
+            <div>
+              <h3>Custom Epoxy</h3>
+              <span>CUSTOM FINISH</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="epoxy-card">
+          <img
+            src="images/epoxy-6.jpeg"
+            alt="Professional flooring project">
+          <div class="epoxy-overlay">
+            <div>
+              <h3>Floor Coating</h3>
+              <span>HIGH PERFORMANCE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="epoxy-card">
+          <img
+            src="images/epoxy-7.jpeg"
+            alt="Premium epoxy flooring project">
+          <div class="epoxy-overlay">
+            <div>
+              <h3>Premium Flooring</h3>
+              <span>MODERN HOUSE</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-buttons epoxy-cta">
+
+        <a href="#contact" class="btn btn-primary">
+          GET A FREE EPOXY ESTIMATE
+        </a>
+
+        <a href="tel:+19157039824" class="btn btn-secondary">
+          CALL (915) 703-9824
+        </a>
 
       </div>
 
@@ -937,6 +1139,7 @@
           </div>
 
           <div class="contact-item">
+
             <small>Phone</small>
 
             <p>
