@@ -1,2190 +1,801 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="theme-color" content="#0b0b0b">
-
-<meta
-name="description"
-content="Modern House General Contractor provides professional remodeling, painting, flooring and epoxy flooring services in El Paso, Texas."
->
-
-<title>Modern House | General Contractor</title>
-
-
-<style>
-
-/* ============================================================
-   MODERN HOUSE GENERAL CONTRACTOR
-   PROFESSIONAL WEBSITE
-   ============================================================ */
-
-
-/* ============================================================
-   COLOR SYSTEM
-   ============================================================ */
-
-:root {
-
-  --yellow: #ffd000;
-
-  --gold: #f0b800;
-
-  --black: #080808;
-
-  --dark: #0f0f0f;
-
-  --dark-2: #141414;
-
-  --card: #181818;
-
-  --card-2: #1d1d1d;
-
-  --line: #303030;
-
-  --white: #ffffff;
-
-  --muted: #a7a7a7;
-
-}
-
-
-/* ============================================================
-   RESET
-   ============================================================ */
-
-* {
-
-  box-sizing: border-box;
-
-}
-
-
-html {
-
-  scroll-behavior: smooth;
-
-}
-
-
-body {
-
-  margin: 0;
-
-  padding: 0;
-
-  font-family: Arial, Helvetica, sans-serif;
-
-  background: var(--black);
-
-  color: var(--white);
-
-  line-height: 1.5;
-
-  overflow-x: hidden;
-
-}
-
-
-img {
-
-  max-width: 100%;
-
-}
-
-
-a {
-
-  -webkit-tap-highlight-color: transparent;
-
-}
-
-
-button {
-
-  font-family: inherit;
-
-  -webkit-tap-highlight-color: transparent;
-
-}
-
-
-/* ============================================================
-   MAIN CONTAINER
-   ============================================================ */
-
-.container {
-
-  width: min(100%, 980px);
-
-  margin: 0 auto;
-
-}
-
-
-/* ============================================================
-   HERO
-   ============================================================ */
-
-.hero {
-
-  position: relative;
-
-  padding: 24px 18px 36px;
-
-  text-align: center;
-
-  background:
-
-    radial-gradient(
-
-      circle at 50% 0%,
-
-      rgba(255,208,0,0.13),
-
-      transparent 35%
-
-    ),
-
-    linear-gradient(
-
-      145deg,
-
-      #070707,
-
-      #191919 55%,
-
-      #0b0b0b
-
-    );
-
-  border-bottom: 1px solid #292929;
-
-}
-
-
-.hero-glow {
-
-  position: absolute;
-
-  left: 50%;
-
-  top: 0;
-
-  width: 280px;
-
-  height: 160px;
-
-  transform: translateX(-50%);
-
-  background: rgba(255,208,0,0.05);
-
-  filter: blur(45px);
-
-  pointer-events: none;
-
-}
-
-
-.hero-content {
-
-  position: relative;
-
-  z-index: 1;
-
-}
-
-
-/* ============================================================
-   LOGO
-   ============================================================ */
-
-.logo-wrap {
-
-  width: min(100%,560px);
-
-  margin: 0 auto 22px;
-
-  padding: 10px;
-
-  background: #ffffff;
-
-  border-radius: 18px;
-
-  box-shadow:
-
-    0 14px 45px rgba(0,0,0,0.45);
-
-}
-
-
-.logo {
-
-  display: block;
-
-  width: 100%;
-
-  max-height: 270px;
-
-  object-fit: contain;
-
-  border-radius: 10px;
-
-}
-
-
-/* ============================================================
-   BRAND
-   ============================================================ */
-
-.brand {
-
-  margin: 0;
-
-  font-size: clamp(32px,8vw,48px);
-
-  line-height: 1;
-
-  font-weight: 900;
-
-  letter-spacing: 0.3px;
-
-}
-
-
-.subtitle {
-
-  margin-top: 10px;
-
-  color: var(--yellow);
-
-  font-size: clamp(15px,4vw,19px);
-
-  letter-spacing: 3px;
-
-  font-weight: 900;
-
-}
-
-
-.owner {
-
-  margin-top: 24px;
-
-  font-size: 22px;
-
-  font-weight: 800;
-
-}
-
-
-.location {
-
-  margin-top: 4px;
-
-  color: #c5c5c5;
-
-  font-size: 16px;
-
-}
-
-
-/* ============================================================
-   CONTACT BUTTONS
-   ============================================================ */
-
-.contact {
-
-  width: min(100%,540px);
-
-  margin: 24px auto 0;
-
-  display: grid;
-
-  gap: 11px;
-
-}
-
-
-.contact-btn {
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap: 10px;
-
-  min-height: 58px;
-
-  padding: 15px 18px;
-
-  border-radius: 13px;
-
-  text-decoration: none;
-
-  font-size: 17px;
-
-  font-weight: 900;
-
-  transition:
-
-    transform 0.15s ease,
-
-    opacity 0.15s ease;
-
-}
-
-
-.contact-btn:hover {
-
-  opacity: 0.94;
-
-}
-
-
-.contact-btn:active {
-
-  transform: scale(0.985);
-
-}
-
-
-.call-btn {
-
-  background: var(--yellow);
-
-  color: #050505;
-
-}
-
-
-.whatsapp-btn {
-
-  background: #25D366;
-
-  color: #ffffff;
-
-}
-
-
-.email-btn {
-
-  background: #ffffff;
-
-  color: #111111;
-
-}
-
-
-/* ============================================================
-   SECTIONS
-   ============================================================ */
-
-.section {
-
-  padding: 34px 18px;
-
-}
-
-
-.section-title {
-
-  margin: 0 0 18px;
-
-  color: var(--yellow);
-
-  font-size: 25px;
-
-  line-height: 1.2;
-
-  letter-spacing: 1.5px;
-
-  font-weight: 900;
-
-}
-
-
-/* ============================================================
-   SERVICES
-   ============================================================ */
-
-.services-card {
-
-  overflow: hidden;
-
-  background:
-
-    linear-gradient(
-
-      145deg,
-
-      #191919,
-
-      #121212
-
-    );
-
-  border: 1px solid var(--line);
-
-  border-radius: 16px;
-
-  box-shadow:
-
-    0 10px 30px rgba(0,0,0,0.18);
-
-}
-
-
-.service {
-
-  width: 100%;
-
-  min-height: 59px;
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 13px;
-
-  padding: 14px 18px;
-
-  border: 0;
-
-  border-bottom: 1px solid var(--line);
-
-  background: transparent;
-
-  color: #ffffff;
-
-  text-align: left;
-
-  font-size: 16px;
-
-  font-weight: 750;
-
-}
-
-
-.service:last-child {
-
-  border-bottom: 0;
-
-}
-
-
-.check {
-
-  flex: 0 0 auto;
-
-  color: var(--yellow);
-
-  font-size: 19px;
-
-  font-weight: 900;
-
-}
-
-
-/* ============================================================
-   EPOXY SERVICE BUTTON
-   ============================================================ */
-
-.epoxy-service {
-
-  cursor: pointer;
-
-  transition:
-
-    background 0.18s ease;
-
-}
-
-
-.epoxy-service:hover {
-
-  background: #222222;
-
-}
-
-
-.epoxy-service:focus {
-
-  background: #222222;
-
-  outline: none;
-
-}
-
-
-.epoxy-service:focus-visible {
-
-  box-shadow:
-
-    inset 0 0 0 2px var(--yellow);
-
-}
-
-
-.epoxy-text {
-
-  flex: 1;
-
-}
-
-
-.epoxy-arrow {
-
-  color: var(--yellow);
-
-  font-size: 24px;
-
-  line-height: 1;
-
-  font-weight: 400;
-
-}
-
-
-/* ============================================================
-   GALLERY
-   ============================================================ */
-
-#epoxyGallery {
-
-  display: none;
-
-  padding-top: 0;
-
-}
-
-
-#epoxyGallery.show {
-
-  display: block;
-
-}
-
-
-.gallery-heading {
-
-  display: flex;
-
-  align-items: flex-end;
-
-  justify-content: space-between;
-
-  gap: 15px;
-
-  margin-bottom: 7px;
-
-}
-
-
-.gallery-heading .section-title {
-
-  margin: 0;
-
-}
-
-
-.gallery-count {
-
-  color: #aaaaaa;
-
-  font-size: 13px;
-
-  white-space: nowrap;
-
-}
-
-
-.gallery-intro {
-
-  margin: 0 0 20px;
-
-  color: var(--muted);
-
-  font-size: 14px;
-
-  line-height: 1.5;
-
-}
-
-
-.gallery {
-
-  display: grid;
-
-  grid-template-columns:
-
-    repeat(2,minmax(0,1fr));
-
-  gap: 10px;
-
-}
-
-
-.gallery-item {
-
-  position: relative;
-
-  aspect-ratio: 1 / 1;
-
-  overflow: hidden;
-
-  border-radius: 12px;
-
-  background: #222222;
-
-  border: 1px solid #333333;
-
-  cursor: pointer;
-
-}
-
-
-.gallery-item img {
-
-  width: 100%;
-
-  height: 100%;
-
-  display: block;
-
-  object-fit: cover;
-
-  transition:
-
-    transform 0.35s ease;
-
-}
-
-
-.gallery-item:hover img {
-
-  transform: scale(1.05);
-
-}
-
-
-.gallery-number {
-
-  position: absolute;
-
-  left: 8px;
-
-  bottom: 8px;
-
-  padding: 5px 8px;
-
-  border-radius: 6px;
-
-  background: rgba(0,0,0,0.72);
-
-  color: #ffffff;
-
-  font-size: 11px;
-
-  font-weight: 900;
-
-  letter-spacing: 0.4px;
-
-}
-
-
-.loading {
-
-  grid-column: 1 / -1;
-
-  padding: 35px 10px;
-
-  text-align: center;
-
-  color: #aaaaaa;
-
-}
-
-
-.error {
-
-  grid-column: 1 / -1;
-
-  padding: 17px;
-
-  border: 1px solid #633333;
-
-  border-radius: 12px;
-
-  background: #251414;
-
-  color: #ffbebe;
-
-  font-size: 14px;
-
-  line-height: 1.5;
-
-}
-
-
-/* ============================================================
-   PHOTO MODAL
-   ============================================================ */
-
-.modal {
-
-  display: none;
-
-  position: fixed;
-
-  inset: 0;
-
-  z-index: 9999;
-
-  align-items: center;
-
-  justify-content: center;
-
-  padding: 18px;
-
-  background: rgba(0,0,0,0.96);
-
-}
-
-
-.modal.show {
-
-  display: flex;
-
-}
-
-
-.modal img {
-
-  max-width: 96vw;
-
-  max-height: 88vh;
-
-  object-fit: contain;
-
-  border-radius: 6px;
-
-}
-
-
-.modal-close {
-
-  position: fixed;
-
-  top: 10px;
-
-  right: 16px;
-
-  width: 45px;
-
-  height: 45px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  border-radius: 50%;
-
-  color: #ffffff;
-
-  background: rgba(255,255,255,0.1);
-
-  font-size: 34px;
-
-  line-height: 1;
-
-  cursor: pointer;
-
-  z-index: 10000;
-
-}
-
-
-/* ============================================================
-   CTA
-   ============================================================ */
-
-.cta {
-
-  margin: 4px 18px 30px;
-
-  padding: 28px 20px;
-
-  border-radius: 18px;
-
-  background:
-
-    linear-gradient(
-
-      135deg,
-
-      var(--yellow),
-
-      #e7ae00
-
-    );
-
-  color: #050505;
-
-  text-align: center;
-
-}
-
-
-.cta h2 {
-
-  margin: 0 0 8px;
-
-  font-size: 26px;
-
-  font-weight: 900;
-
-}
-
-
-.cta p {
-
-  margin: 0 0 18px;
-
-  font-size: 15px;
-
-  font-weight: 700;
-
-}
-
-
-.cta a {
-
-  display: inline-block;
-
-  padding: 14px 23px;
-
-  border-radius: 10px;
-
-  background: #080808;
-
-  color: #ffffff;
-
-  text-decoration: none;
-
-  font-weight: 900;
-
-}
-
-
-/* ============================================================
-   FOOTER
-   ============================================================ */
-
-.footer {
-
-  padding: 24px 18px 30px;
-
-  text-align: center;
-
-  color: #888888;
-
-  font-size: 13px;
-
-  line-height: 1.7;
-
-  border-top: 1px solid #202020;
-
-}
-
-
-/* ============================================================
-   DESKTOP
-   ============================================================ */
-
-@media (min-width:700px) {
-
-  .hero {
-
-    padding-top: 38px;
-
-    padding-bottom: 45px;
-
-  }
-
-
-  .gallery {
-
-    grid-template-columns:
-
-      repeat(3,minmax(0,1fr));
-
-  }
-
-
-  .section {
-
-    padding-left: 25px;
-
-    padding-right: 25px;
-
-  }
-
-
-  .cta {
-
-    margin-left: 25px;
-
-    margin-right: 25px;
-
-  }
-
-}
-
-
-/* ============================================================
-   LARGE DESKTOP
-   ============================================================ */
-
-@media (min-width:1000px) {
-
-  .gallery {
-
-    grid-template-columns:
-
-      repeat(4,minmax(0,1fr));
-
-  }
-
-}
-
-
-/* ============================================================
-   SMALL PHONES
-   ============================================================ */
-
-@media (max-width:420px) {
-
-  .brand {
-
-    font-size: 31px;
-
-  }
-
-
-  .subtitle {
-
-    letter-spacing: 2px;
-
-  }
-
-
-  .gallery {
-
-    gap: 8px;
-
-  }
-
-}
-
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Modern House General Contractor | El Paso, TX</title>
+
+  <meta name="description"
+    content="Modern House General Contractor provides professional remodeling, epoxy flooring, urethane coating, painting, drywall and commercial renovation services in El Paso, Texas.">
+
+  <style>
+    :root {
+      --yellow: #f5c400;
+      --black: #111111;
+      --dark: #181818;
+      --gray: #bdbdbd;
+      --light: #f5f5f5;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--black);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(10,10,10,.96);
+      border-bottom: 1px solid rgba(245,196,0,.35);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      min-height: 76px;
+      padding: 10px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .nav-logo {
+      width: 175px;
+      max-height: 58px;
+      object-fit: contain;
+      background: white;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+    }
+
+    nav a {
+      font-weight: 700;
+      font-size: .9rem;
+      color: #eee;
+    }
+
+    nav a:hover {
+      color: var(--yellow);
+    }
+
+    .nav-btn {
+      background: var(--yellow);
+      color: #111;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: 800;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: calc(100vh - 76px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 55px 20px 70px;
+      background:
+        radial-gradient(circle at center, rgba(245,196,0,.13), transparent 35%),
+        linear-gradient(135deg, #101010, #202020);
+    }
+
+    .hero-content {
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .hero-logo {
+      width: min(620px, 88vw);
+      margin: 0 auto 28px;
+      background: white;
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: 0 0 45px rgba(245,196,0,.18);
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1.05;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 span {
+      color: var(--yellow);
+    }
+
+    .hero p {
+      color: #ddd;
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      max-width: 760px;
+      margin: 0 auto 28px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 6px;
+      font-weight: 800;
+      transition: .2s;
+    }
+
+    .btn-primary {
+      background: var(--yellow);
+      color: #111;
+    }
+
+    .btn-secondary {
+      border: 1px solid #777;
+      background: #222;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 42px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .section-title h2 span {
+      color: var(--yellow);
+    }
+
+    .section-title p {
+      color: #aaa;
+    }
+
+    /* SERVICES */
+    #services {
+      background: #f4f4f4;
+      color: #111;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: white;
+      border: 2px solid #e7e7e7;
+      border-radius: 12px;
+      padding: 28px 22px;
+      min-height: 180px;
+      cursor: pointer;
+      transition: .25s;
+      box-shadow: 0 7px 25px rgba(0,0,0,.07);
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--yellow);
+      box-shadow: 0 12px 30px rgba(0,0,0,.12);
+    }
+
+    .service-icon {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+    }
+
+    .service-card p {
+      color: #666;
+      font-size: .95rem;
+    }
+
+    /* PROJECT GALLERIES */
+    #epoxy,
+    #total-home-renovation {
+      background: #101010;
+    }
+
+    .gallery-note {
+      text-align: center;
+      color: #aaa;
+      max-width: 760px;
+      margin: -20px auto 35px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 14px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 9px;
+      aspect-ratio: 4 / 3;
+      background: #222;
+      cursor: pointer;
+      border: 1px solid #333;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .35s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.07);
+    }
+
+    .gallery-label {
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      background: rgba(0,0,0,.75);
+      color: white;
+      padding: 5px 9px;
+      border-radius: 4px;
+      font-size: .75rem;
+      font-weight: 700;
+    }
+
+    /* MODAL */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 3000;
+      background: rgba(0,0,0,.93);
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+    }
+
+    .modal.open {
+      display: flex;
+    }
+
+    .modal img {
+      max-width: 94vw;
+      max-height: 88vh;
+      object-fit: contain;
+      border-radius: 5px;
+    }
+
+    .close {
+      position: fixed;
+      top: 18px;
+      right: 24px;
+      font-size: 38px;
+      color: white;
+      cursor: pointer;
+      z-index: 3001;
+    }
+
+    /* ABOUT / CTA */
+    #about {
+      background: #f4f4f4;
+      color: #111;
+    }
+
+    .about-box {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-box p {
+      color: #555;
+      font-size: 1.08rem;
+      margin-bottom: 25px;
+    }
+
+    .cta {
+      background:
+        linear-gradient(rgba(0,0,0,.83), rgba(0,0,0,.9)),
+        radial-gradient(circle at center, #554500, #111);
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      margin-bottom: 12px;
+    }
+
+    .cta h2 span {
+      color: var(--yellow);
+    }
+
+    .contact-info {
+      margin: 25px auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .contact-pill {
+      border: 1px solid #444;
+      background: #1d1d1d;
+      padding: 12px 18px;
+      border-radius: 7px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #090909;
+      border-top: 1px solid #292929;
+      padding: 30px 20px;
+      text-align: center;
+      color: #888;
+      font-size: .9rem;
+    }
+
+    footer strong {
+      color: var(--yellow);
+    }
+
+    /* MOBILE */
+    @media (max-width: 760px) {
+      .nav {
+        flex-direction: column;
+        padding: 12px;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .nav-btn {
+        display: none;
+      }
+
+      .hero {
+        min-height: calc(100vh - 125px);
+        padding-top: 35px;
+      }
+
+      .hero-logo {
+        width: min(520px, 94vw);
+      }
+
+      section {
+        padding: 60px 15px;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+
+      .gallery-item {
+        border-radius: 6px;
+      }
+    }
+  </style>
 </head>
-
 
 <body>
 
-
-<div class="container">
-
-
-<header class="hero">
-
-
-<div class="hero-glow"></div>
-
-
-<div class="hero-content">
-
-
-<div class="logo-wrap">
-
-
-<img
-
-class="logo"
-
-src="https://raw.githubusercontent.com/modernhousegc/Modern-house-website/main/modern-house-logo.jpeg"
-
-alt="Modern House General Contractor logo"
-
-onerror="hideBrokenLogo(this)"
-
->
-
-
-</div>
-
-
-<h1 class="brand">
-
-Modern House
-
-</h1>
-
-
-<div class="subtitle">
-
-GENERAL CONTRACTOR
-
-</div>
-
-
-<div class="owner">
-
-Kamel Nasr
-
-</div>
-
-
-<div class="location">
-
-El Paso, Texas
-
-</div>
-
-
-<div class="contact">
-
-
-<a
-
-class="contact-btn call-btn"
-
-href="tel:+19157039824"
-
->
-
-<span>
-
-📞
-
-</span>
-
-<span>
-
-Call 915-703-9824
-
-</span>
-
-</a>
-
-
-<a
-
-class="contact-btn whatsapp-btn"
-
-href="https://wa.me/19157039824"
-
-target="_blank"
-
-rel="noopener noreferrer"
-
->
-
-<span>
-
-💬
-
-</span>
-
-<span>
-
-Contact us on WhatsApp
-
-</span>
-
-</a>
-
-
-<a
-
-class="contact-btn email-btn"
-
-href="mailto:nasrkamel642@gmail.com"
-
->
-
-<span>
-
-✉️
-
-</span>
-
-<span>
-
-nasrkamel642@gmail.com
-
-</span>
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-</header>
-
-
-<main>
-
-
-<section
-
-class="section"
-
-aria-labelledby="servicesTitle"
-
->
-
-
-<h2
-
-id="servicesTitle"
-
-class="section-title"
-
->
-
-OUR SERVICES
-
-</h2>
-
-
-<div class="services-card">
-
-
-<div class="service">
-
-
-<span class="check">
-
-✓
-
-</span>
-
-
-<span>
-
-Interior / Exterior Painting
-
-</span>
-
-
-</div>
-
-
-<div class="service">
-
-
-<span class="check">
-
-✓
-
-</span>
-
-
-<span>
-
-Total Home Renovations
-
-</span>
-
-
-</div>
-
-
-<div class="service">
-
-
-<span class="check">
-
-✓
-
-</span>
-
-
-<span>
-
-Flooring &amp; Hardwood
-
-</span>
-
-
-</div>
-
-
-<div class="service">
-
-
-<span class="check">
-
-✓
-
-</span>
-
-
-<span>
-
-Kitchen &amp; Bathroom Remodeling
-
-</span>
-
-
-</div>
-
-
-<div class="service">
-
-
-<span class="check">
-
-✓
-
-</span>
-
-
-<span>
-
-Siding
-
-</span>
-
-
-</div>
-
-
-<div class="service">
-
-
-<span class="check">
-
-✓
-
-</span>
-
-
-<span>
-
-Decks &amp; Porches
-
-</span>
-
-
-</div>
-
-
-<div class="service">
-
-
-<span class="check">
-
-✓
-
-</span>
-
-
-<span>
-
-Carpentry
-
-</span>
-
-
-</div>
-
-
-<div class="service">
-
-
-<span class="check">
-
-✓
-
-</span>
-
-
-<span>
-
-Basement Finishing &amp; Remodeling
-
-</span>
-
-
-</div>
-
-
-<div class="service">
-
-
-<span class="check">
-
-✓
-
-</span>
-
-
-<span>
-
-Door &amp; Window Installation
-
-</span>
-
-
-</div>
-
-
-<button
-
-class="service epoxy-service"
-
-type="button"
-
-onclick="toggleEpoxyGallery()"
-
-aria-expanded="false"
-
-aria-controls="epoxyGallery"
-
->
-
-
-<span class="check">
-
-✓
-
-</span>
-
-
-<span class="epoxy-text">
-
-Epoxy Floors
-
-</span>
-
-
-<span
-
-id="epoxyArrow"
-
-class="epoxy-arrow"
-
->
-
-＋
-
-</span>
-
-
-</button>
-
-
-</div>
-
-
-</section>
-
-
-<section
-
-id="epoxyGallery"
-
-class="section"
-
-aria-labelledby="galleryTitle"
-
-aria-hidden="true"
-
->
-
-
-<div class="gallery-heading">
-
-
-<h2
-
-id="galleryTitle"
-
-class="section-title"
-
->
-
-EPOXY FLOORS
-
-</h2>
-
-
-<span
-
-id="galleryCount"
-
-class="gallery-count"
-
-></span>
-
-
-</div>
-
-
-<p class="gallery-intro">
-
-Explore our epoxy flooring projects.
-
-Tap any photo to view it full screen.
-
-</p>
-
-
-<div
-
-id="gallery"
-
-class="gallery"
-
->
-
-
-<div class="loading">
-
-Loading project photos...
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-<section class="cta">
-
-
-<h2>
-
-Ready to start your project?
-
-</h2>
-
-
-<p>
-
-Contact Modern House for a free estimate.
-
-</p>
-
-
-<a href="tel:+19157039824">
-
-GET A FREE ESTIMATE
-
-</a>
-
-
-</section>
-
-
-</main>
-
-
-<footer class="footer">
-
-
-Modern House General Contractor · El Paso, TX
-
-
-<br>
-
-
-Kamel Nasr · 915-703-9824
-
-
-</footer>
-
-
-</div>
-
-
-<div
-
-id="photoModal"
-
-class="modal"
-
-role="dialog"
-
-aria-modal="true"
-
-aria-label="Project photo"
-
-onclick="closePhoto(event)"
-
->
-
-
-<div
-
-class="modal-close"
-
-onclick="closePhoto(event)"
-
->
-
-×
-
-</div>
-
-
-<img
-
-id="modalPhoto"
-
-src=""
-
-alt="Epoxy flooring project"
-
->
-
-
-</div>
-
-
-<script>
-
-
-/* ============================================================
-   GALLERY SETTINGS
-   ============================================================ */
-
-
-const GITHUB_API =
-
-"https://api.github.com/repos/modernhousegc/Modern-house-website/contents/images?ref=main";
-
-
-const gallery =
-
-document.getElementById("gallery");
-
-
-const gallerySection =
-
-document.getElementById("epoxyGallery");
-
-
-const galleryCount =
-
-document.getElementById("galleryCount");
-
-
-const epoxyButton =
-
-document.querySelector(".epoxy-service");
-
-
-const epoxyArrow =
-
-document.getElementById("epoxyArrow");
-
-
-const photoModal =
-
-document.getElementById("photoModal");
-
-
-const modalPhoto =
-
-document.getElementById("modalPhoto");
-
-
-let photosLoaded = false;
-
-
-/* ============================================================
-   LOGO ERROR HANDLER
-   ============================================================ */
-
-function hideBrokenLogo(image) {
-
-
-const wrapper =
-
-image.closest(".logo-wrap");
-
-
-if (wrapper) {
-
-
-wrapper.style.display = "none";
-
-
-}
-
-
-}
-
-
-/* ============================================================
-   OPEN / CLOSE EPOXY GALLERY
-   ============================================================ */
-
-function toggleEpoxyGallery() {
-
-
-const opening =
-
-!gallerySection.classList.contains("show");
-
-
-gallerySection.classList.toggle(
-
-"show",
-
-opening
-
-);
-
-
-gallerySection.setAttribute(
-
-"aria-hidden",
-
-opening ? "false" : "true"
-
-);
-
-
-epoxyButton.setAttribute(
-
-"aria-expanded",
-
-opening ? "true" : "false"
-
-);
-
-
-epoxyArrow.textContent =
-
-opening ? "−" : "＋";
-
-
-if (opening) {
-
-
-if (!photosLoaded) {
-
-
-loadEpoxyPhotos();
-
-
-}
-
-
-setTimeout(function() {
-
-
-gallerySection.scrollIntoView({
-
-behavior: "smooth",
-
-block: "start"
-
-});
-
-
-},100);
-
-
-}
-
-
-}
-
-
-/* ============================================================
-   LOAD ALL IMAGES FROM GITHUB
-   ============================================================ */
-
-async function loadEpoxyPhotos() {
-
-
-photosLoaded = true;
-
-
-try {
-
-
-const response =
-
-await fetch(
-
-GITHUB_API,
-
-{
-
-headers: {
-
-"Accept":
-
-"application/vnd.github+json"
-
-}
-
-}
-
-);
-
-
-if (!response.ok) {
-
-
-throw new Error(
-
-"GitHub API request failed: " +
-
-response.status
-
-);
-
-
-}
-
-
-const files =
-
-await response.json();
-
-
-const imageFiles =
-
-files
-
-.filter(function(file) {
-
-
-return file.type === "file";
-
-
-})
-
-
-.filter(function(file) {
-
-
-return /\.(jpg|jpeg|png|webp|gif)$/i.test(
-
-file.name
-
-);
-
-
-})
-
-
-.sort(function(a,b) {
-
-
-return a.name.localeCompare(
-
-b.name,
-
-undefined,
-
-{
-
-numeric: true,
-
-sensitivity: "base"
-
-}
-
-);
-
-
-});
-
-
-gallery.innerHTML = "";
-
-
-if (imageFiles.length === 0) {
-
-
-gallery.innerHTML =
-
-'<div class="error">' +
-
-'No image files were found inside the GitHub images folder.' +
-
-'</div>';
-
-
-return;
-
-
-}
-
-
-galleryCount.textContent =
-
-imageFiles.length +
-
-(
-
-imageFiles.length === 1
-
-? " PROJECT"
-
-: " PROJECTS"
-
-);
-
-
-imageFiles.forEach(function(file,index) {
-
-
-const item =
-
-document.createElement("div");
-
-
-item.className =
-
-"gallery-item";
-
-
-item.setAttribute(
-
-"role",
-
-"button"
-
-);
-
-
-item.setAttribute(
-
-"tabindex",
-
-"0"
-
-);
-
-
-const img =
-
-document.createElement("img");
-
-
-img.src =
-
-file.download_url;
-
-
-img.alt =
-
-"Modern House epoxy flooring project " +
-
-(index + 1);
-
-
-img.loading =
-
-index < 6
-
-? "eager"
-
-: "lazy";
-
-
-img.decoding =
-
-"async";
-
-
-img.onerror =
-
-function() {
-
-
-item.remove();
-
-
-};
-
-
-const number =
-
-document.createElement("div");
-
-
-number.className =
-
-"gallery-number";
-
-
-number.textContent =
-
-"PROJECT " +
-
-(index + 1);
-
-
-item.appendChild(img);
-
-
-item.appendChild(number);
-
-
-item.addEventListener(
-
-"click",
-
-function() {
-
-
-openPhoto(
-
-file.download_url,
-
-img.alt
-
-);
-
-
-}
-
-
-);
-
-
-item.addEventListener(
-
-"keydown",
-
-function(event) {
-
-
-if (
-
-event.key === "Enter" ||
-
-event.key === " "
-
-) {
-
-
-event.preventDefault();
-
-
-openPhoto(
-
-file.download_url,
-
-img.alt
-
-);
-
-
-}
-
-
-}
-
-
-);
-
-
-gallery.appendChild(item);
-
-
-});
-
-
-}
-
-
-catch(error) {
-
-
-console.error(
-
-"Gallery error:",
-
-error
-
-);
-
-
-gallery.innerHTML =
-
-'<div class="error">' +
-
-'The project photos could not be loaded. ' +
-
-'Make sure the photos are inside the GitHub "images" folder and the repository is public.' +
-
-'</div>';
-
-
-}
-
-
-}
-
-
-/* ============================================================
-   OPEN PHOTO
-   ============================================================ */
-
-function openPhoto(src,alt) {
-
-
-modalPhoto.src =
-
-src;
-
-
-modalPhoto.alt =
-
-alt;
-
-
-photoModal.classList.add(
-
-"show"
-
-);
-
-
-document.body.style.overflow =
-
-"hidden";
-
-
-}
-
-
-/* ============================================================
-   CLOSE PHOTO
-   ============================================================ */
-
-function closePhoto(event) {
-
-
-if (!event) {
-
-
-photoModal.classList.remove(
-
-"show"
-
-);
-
-
-document.body.style.overflow =
-
-"";
-
-
-return;
-
-
-}
-
-
-if (
-
-event.target === photoModal ||
-
-event.target.classList.contains(
-
-"modal-close"
-
-)
-
-) {
-
-
-photoModal.classList.remove(
-
-"show"
-
-);
-
-
-document.body.style.overflow =
-
-"";
-
-
-}
-
-
-}
-
-
-/* ============================================================
-   ESC KEY
-   ============================================================ */
-
-document.addEventListener(
-
-"keydown",
-
-function(event) {
-
-
-if (event.key === "Escape") {
-
-
-photoModal.classList.remove(
-
-"show"
-
-);
-
-
-document.body.style.overflow =
-
-"";
-
-
-}
-
-
-}
-
-);
-
-
-</script>
-
+  <!-- HEADER -->
+  <header>
+    <div class="nav">
+      <a href="#home">
+        <img class="nav-logo" src="images/modern-house-logo.jpeg"
+          alt="Modern House General Contractor">
+      </a>
+
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#epoxy">Epoxy Floors</a>
+        <a href="#total-home-renovation">Total Home Renovation</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-btn" href="https://wa.me/19157039824"
+          target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content">
+
+        <img class="hero-logo"
+          src="images/modern-house-logo.jpeg"
+          alt="Modern House General Contractor logo">
+
+        <h1>Professional <span>General Contractor</span></h1>
+
+        <p>
+          Remodeling, epoxy flooring, painting, drywall and commercial
+          renovation services in El Paso, Texas.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary"
+            href="https://wa.me/19157039824"
+            target="_blank" rel="noopener">
+            GET A FREE ESTIMATE
+          </a>
+
+          <a class="btn btn-secondary" href="#epoxy">
+            VIEW OUR EPOXY WORK
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Our <span>Services</span></h2>
+          <p>Professional solutions for residential and commercial projects.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <div class="service-card"
+            onclick="document.getElementById('epoxy').scrollIntoView({behavior:'smooth'})">
+            <div class="service-icon">🏠</div>
+            <h3>Epoxy Floors</h3>
+            <p>
+              Full-flake epoxy flooring with professional preparation
+              and protective coating.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🛠️</div>
+            <h3>General Remodeling</h3>
+            <p>
+              Interior remodeling and renovation solutions for homes
+              and commercial spaces.
+            </p>
+          </div>
+
+          <div class="service-card"
+            onclick="document.getElementById('total-home-renovation').scrollIntoView({behavior:'smooth'})"
+            role="button"
+            tabindex="0"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();document.getElementById('total-home-renovation').scrollIntoView({behavior:'smooth'});}">
+
+            <div class="service-icon">🏡</div>
+            <h3>Total Home Renovation</h3>
+            <p>
+              Complete home and commercial renovations, from construction
+              and installation to finished details.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">✨</div>
+            <h3>Urethane Coating</h3>
+            <p>
+              Durable protective topcoats designed for demanding floors
+              and high-traffic areas.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3>Painting</h3>
+            <p>
+              Interior and commercial painting with clean preparation
+              and professional finishes.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🧱</div>
+            <h3>Drywall</h3>
+            <p>
+              Drywall installation, repairs, finishing and surface preparation.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3>Commercial Projects</h3>
+            <p>
+              Renovation and improvement work for commercial properties
+              and businesses.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EPOXY GALLERY -->
+    <section id="epoxy">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Epoxy <span>Floors</span></h2>
+          <p>Our Work</p>
+        </div>
+
+        <p class="gallery-note">
+          Click any photo to view it full size.
+        </p>
+
+        <div id="gallery" class="gallery"></div>
+
+      </div>
+    </section>
+
+    <!-- TOTAL HOME RENOVATION GALLERY -->
+    <section id="total-home-renovation">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Total Home <span>Renovation</span></h2>
+          <p>Project Gallery — Our Work</p>
+        </div>
+
+        <p class="gallery-note">
+          Explore the renovation process and finished details.
+          Click any photo to view it full size.
+        </p>
+
+        <div id="renovation-gallery" class="gallery"></div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Modern <span>House</span></h2>
+          <p>General Contractor — El Paso, Texas</p>
+        </div>
+
+        <div class="about-box">
+          <p>
+            Modern House General Contractor provides professional remodeling,
+            flooring and renovation services with a focus on quality
+            workmanship, clean finishes and dependable service.
+          </p>
+
+          <a class="btn btn-primary"
+            href="https://wa.me/19157039824"
+            target="_blank" rel="noopener">
+            TALK TO US ON WHATSAPP
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="cta">
+      <div class="container">
+
+        <h2>Let's Build Something <span>Great</span></h2>
+
+        <p>
+          Contact Modern House General Contractor for your next project.
+        </p>
+
+        <div class="contact-info">
+
+          <a class="contact-pill" href="tel:+19157039824">
+            📞 (915) 703-9824
+          </a>
+
+          <a class="contact-pill"
+            href="mailto:nasrkamel642@gmail.com">
+            ✉️ nasrkamel642@gmail.com
+          </a>
+
+          <div class="contact-pill">
+            📍 El Paso, Texas
+          </div>
+
+        </div>
+
+        <a class="btn btn-primary"
+          href="https://wa.me/19157039824"
+          target="_blank" rel="noopener">
+          REQUEST A FREE ESTIMATE
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- IMAGE MODAL -->
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <div class="close" onclick="closeModal(event)">×</div>
+    <img id="modalImage" src="" alt="Modern House project photo">
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 <strong>Modern House General Contractor</strong> — El Paso, Texas
+  </footer>
+
+  <script>
+    /*
+      PHOTO FOLDERS AND FILE NAMES
+
+      Epoxy photos:
+      images/epoxy/epoxy-01.jpeg through epoxy-35.jpeg
+
+      Total Home Renovation photos:
+      images/total-home-renovation/total-home-renovation-001.jpg
+      through total-home-renovation-060.jpg
+
+      Upload the photos using these exact names and folders.
+    */
+
+    const epoxyGallery = document.getElementById("gallery");
+    const renovationGallery =
+      document.getElementById("renovation-gallery");
+
+    function addGalleryPhotos(
+      container,
+      count,
+      pathBuilder,
+      altBuilder,
+      labelBuilder
+    ) {
+      for (let i = 1; i <= count; i++) {
+        const item = document.createElement("div");
+        item.className = "gallery-item";
+
+        const img = document.createElement("img");
+        img.src = pathBuilder(i);
+        img.alt = altBuilder(i);
+        img.loading = i <= 6 ? "eager" : "lazy";
+
+        img.onerror = function () {
+          item.style.display = "none";
+        };
+
+        item.appendChild(img);
+
+        const label = document.createElement("div");
+        label.className = "gallery-label";
+        label.textContent = labelBuilder(i);
+
+        item.appendChild(label);
+
+        item.onclick = function () {
+          if (img.complete && img.naturalWidth > 0) {
+            openModal(img.src, img.alt);
+          }
+        };
+
+        container.appendChild(item);
+      }
+    }
+
+    /* LOAD EPOXY PHOTOS */
+    addGalleryPhotos(
+      epoxyGallery,
+      35,
+      function (i) {
+        return `images/epoxy/epoxy-${String(i).padStart(2, "0")}.jpeg`;
+      },
+      function (i) {
+        return `Modern House epoxy flooring project ${i}`;
+      },
+      function (i) {
+        return `EPOXY PROJECT ${i}`;
+      }
+    );
+
+    /* LOAD TOTAL HOME RENOVATION PHOTOS */
+    addGalleryPhotos(
+      renovationGallery,
+      60,
+      function (i) {
+        return `images/total-home-renovation/total-home-renovation-${String(i).padStart(3, "0")}.jpg`;
+      },
+      function (i) {
+        return `Modern House Total Home Renovation project photo ${i}`;
+      },
+      function (i) {
+        return `RENOVATION ${i}`;
+      }
+    );
+
+    /* OPEN PHOTO */
+    function openModal(src, alt) {
+      const modal = document.getElementById("modal");
+      const modalImage = document.getElementById("modalImage");
+
+      modalImage.src = src;
+      modalImage.alt = alt;
+      modal.classList.add("open");
+      document.body.style.overflow = "hidden";
+    }
+
+    /* CLOSE PHOTO */
+    function closeModal(event) {
+      if (
+        !event ||
+        event.target.id === "modal" ||
+        event.target.className === "close"
+      ) {
+        document.getElementById("modal").classList.remove("open");
+        document.getElementById("modalImage").src = "";
+        document.body.style.overflow = "";
+      }
+    }
+
+    /* CLOSE WITH ESCAPE KEY */
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "Escape") {
+        document.getElementById("modal").classList.remove("open");
+        document.getElementById("modalImage").src = "";
+        document.body.style.overflow = "";
+      }
+    });
+  </script>
 
 </body>
-
-
-</html> 
+</html>
