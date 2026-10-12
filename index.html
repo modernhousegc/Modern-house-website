@@ -4,31 +4,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090b0c">
 
 <title>Modern House General Contractor | El Paso, TX</title>
-
-<meta name="description" content="Modern House General Contractor provides professional residential and commercial remodeling, epoxy flooring, urethane coating, painting, drywall and renovation services in El Paso, Texas.">
-
-<meta name="theme-color" content="#0b0d0e">
+<meta name="description" content="Residential and commercial remodeling, epoxy flooring, urethane coating, painting and drywall in El Paso, Texas. Contact Modern House General Contractor for a free estimate.">
 
 <style>
 :root {
   --yellow: #f5c400;
-  --yellow-hover: #ffd633;
   --black: #090b0c;
-  --dark: #101314;
-  --panel: #171a1c;
-  --gray: #a9afb2;
-  --white: #ffffff;
-  --border: rgba(255,255,255,.15);
-  --max-width: 1440px;
+  --dark: #111416;
+  --panel: #191d1f;
+  --white: #fff;
+  --gray: #b8bec1;
+  --border: #363b3e;
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 body {
@@ -39,82 +39,61 @@ body {
   overflow-x: hidden;
 }
 
-body, button, input, textarea, select {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 a {
   color: inherit;
   text-decoration: none;
 }
 
 img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
-button, a {
-  -webkit-tap-highlight-color: transparent;
-}
-
-button:focus-visible,
-a:focus-visible {
-  outline: 2px solid var(--yellow);
-  outline-offset: 4px;
+button, input, textarea, select {
+  font: inherit;
 }
 
 .container {
-  width: min(var(--max-width), 100%);
-  padding-left: 40px;
-  padding-right: 40px;
-  margin: 0 auto;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 40px;
 }
 
 .eyebrow {
   color: var(--yellow);
-  text-transform: uppercase;
-  letter-spacing: 3px;
   font-size: .78rem;
   font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
   margin-bottom: 8px;
 }
 
-.section-heading {
-  font-size: clamp(1.9rem, 3vw, 2.7rem);
+.heading {
+  font-size: clamp(2rem, 3.5vw, 3rem);
   line-height: 1.08;
-  text-transform: uppercase;
   font-weight: 900;
-  letter-spacing: -.8px;
+  text-transform: uppercase;
 }
 
-.section-heading span,
+.heading span,
 .yellow {
   color: var(--yellow);
 }
 
-.section-intro {
-  color: #bfc3c5;
-  max-width: 570px;
-}
-
 .btn {
+  min-height: 47px;
+  padding: 12px 21px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  min-height: 48px;
-  padding: 13px 22px;
-  border: 1px solid transparent;
   border-radius: 4px;
   font-weight: 800;
-  font-size: .88rem;
+  font-size: .84rem;
   text-transform: uppercase;
-  transition: background .2s, color .2s, transform .2s;
+  border: 1px solid transparent;
   cursor: pointer;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
+  transition: .2s;
 }
 
 .btn-primary {
@@ -123,13 +102,14 @@ a:focus-visible {
 }
 
 .btn-primary:hover {
-  background: var(--yellow-hover);
+  background: #ffda3d;
+  transform: translateY(-2px);
 }
 
 .btn-outline {
   border-color: var(--yellow);
   color: white;
-  background: rgba(0,0,0,.35);
+  background: rgba(0,0,0,.3);
 }
 
 .btn-outline:hover {
@@ -144,71 +124,68 @@ header {
   top: 0;
   z-index: 1000;
   background: rgba(8,10,11,.97);
-  border-bottom: 1px solid rgba(245,196,0,.35);
+  border-bottom: 1px solid rgba(245,196,0,.4);
   backdrop-filter: blur(12px);
 }
 
 .nav {
-  max-width: var(--max-width);
+  max-width: 1440px;
   min-height: 76px;
   padding: 10px 40px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  justify-content: space-between;
+  gap: 22px;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 11px;
   flex-shrink: 0;
 }
 
-.nav-logo {
-  width: 68px;
-  height: 54px;
+.brand img {
+  width: 65px;
+  height: 52px;
   object-fit: contain;
 }
 
 .brand-copy {
   display: flex;
   flex-direction: column;
-  line-height: 1.12;
+  line-height: 1.15;
 }
 
 .brand-copy strong {
-  font-size: clamp(.95rem, 1.5vw, 1.3rem);
+  font-size: 1.15rem;
   font-weight: 900;
-  letter-spacing: .4px;
   white-space: nowrap;
 }
 
 .brand-copy span {
   margin-top: 4px;
   color: var(--yellow);
-  font-size: .7rem;
-  font-weight: 800;
-  letter-spacing: 3px;
+  font-size: .66rem;
+  font-weight: 900;
+  letter-spacing: 2.4px;
+  white-space: nowrap;
 }
 
 nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: clamp(12px, 2vw, 27px);
+  gap: clamp(12px, 2vw, 26px);
 }
 
 nav a {
-  font-size: .76rem;
-  text-transform: uppercase;
+  font-size: .73rem;
   font-weight: 800;
-  transition: color .2s;
+  text-transform: uppercase;
 }
 
-nav a:hover,
-nav a.active {
+nav a:hover {
   color: var(--yellow);
 }
 
@@ -221,24 +198,25 @@ nav a.active {
 
 .hero {
   min-height: 470px;
-  position: relative;
   display: flex;
   align-items: center;
+  position: relative;
   background:
     linear-gradient(90deg,
       rgba(5,7,8,.98) 0%,
-      rgba(5,7,8,.91) 32%,
-      rgba(5,7,8,.45) 66%,
-      rgba(5,7,8,.18) 100%),
+      rgba(5,7,8,.88) 35%,
+      rgba(5,7,8,.42) 70%,
+      rgba(5,7,8,.22) 100%),
     url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85")
-    center 52% / cover no-repeat;
-  border-bottom: 1px solid #303234;
+    center / cover no-repeat;
+  border-bottom: 1px solid var(--border);
 }
 
 .hero-content {
-  width: min(var(--max-width), 100%);
+  width: 100%;
+  max-width: 1440px;
   margin: auto;
-  padding: 62px 40px;
+  padding: 60px 40px;
 }
 
 .hero-copy {
@@ -247,28 +225,27 @@ nav a.active {
 
 .hero-location {
   color: var(--yellow);
-  text-transform: uppercase;
-  font-size: .8rem;
-  letter-spacing: 3px;
   font-weight: 800;
-  margin-bottom: 10px;
+  letter-spacing: 3px;
+  font-size: .8rem;
+  text-transform: uppercase;
 }
 
 .hero-kicker {
-  font-size: clamp(.85rem, 1.6vw, 1.15rem);
+  margin-top: 8px;
+  font-size: clamp(.8rem, 1.6vw, 1.1rem);
   font-weight: 800;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: #e0e0e0;
 }
 
 .hero h1 {
-  font-size: clamp(2.5rem, 5.5vw, 5rem);
-  line-height: .99;
-  text-transform: uppercase;
-  letter-spacing: -1.7px;
-  font-weight: 900;
   margin: 8px 0 12px;
+  font-size: clamp(2.6rem, 5.5vw, 5rem);
+  line-height: .99;
+  letter-spacing: -1.5px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .hero h1 span {
@@ -277,18 +254,16 @@ nav a.active {
 }
 
 .hero-subtitle {
-  font-size: clamp(.9rem, 1.8vw, 1.2rem);
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: clamp(.8rem, 1.7vw, 1.15rem);
   font-weight: 800;
-  margin-bottom: 15px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .hero-description {
-  color: #e0e0e0;
-  font-size: .98rem;
-  max-width: 500px;
-  margin-bottom: 23px;
+  max-width: 490px;
+  margin: 14px 0 22px;
+  color: #e1e3e4;
 }
 
 .hero-buttons {
@@ -302,32 +277,28 @@ nav a.active {
   right: 4%;
   bottom: 30px;
   display: grid;
-  gap: 12px;
+  gap: 10px;
+  text-transform: uppercase;
+  font-size: .75rem;
+  font-weight: 800;
+  text-shadow: 0 2px 5px #000;
 }
 
 .trust-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: .75rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  text-shadow: 0 2px 6px #000;
+  gap: 10px;
 }
 
-.trust-icon {
+.trust-item span {
   color: var(--yellow);
-  font-size: 1.45rem;
+  font-size: 1.35rem;
 }
 
 /* SERVICES */
 
-section {
-  scroll-margin-top: 85px;
-}
-
 .services-section {
-  padding: 56px 0 45px;
+  padding: 55px 0 45px;
   background: var(--dark);
 }
 
@@ -339,26 +310,27 @@ section {
   margin-bottom: 28px;
 }
 
-.section-top .section-intro {
-  max-width: 470px;
-  font-size: .92rem;
+.section-intro {
+  max-width: 490px;
+  color: var(--gray);
+  font-size: .93rem;
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 17px;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: 16px;
 }
 
 .service-card {
-  display: flex;
-  flex-direction: column;
   min-width: 0;
   overflow: hidden;
-  background: linear-gradient(145deg, #1b1f21, #101213);
-  border: 1px solid #414548;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(145deg,#1c2022,#101213);
+  border: 1px solid #3c4144;
   border-radius: 5px;
-  transition: border-color .25s, transform .25s;
+  transition: .25s;
 }
 
 .service-card:hover {
@@ -367,19 +339,19 @@ section {
 }
 
 .service-image {
-  height: 145px;
-  background: #24282a;
+  height: 155px;
   overflow: hidden;
+  background: #24282a;
 }
 
 .service-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform .4s;
+  transition: transform .35s;
 }
 
-.service-card:hover .service-image img {
+.service-card:hover img {
   transform: scale(1.05);
 }
 
@@ -388,7 +360,7 @@ section {
   flex: 1;
 }
 
-.service-title-row {
+.service-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -396,32 +368,32 @@ section {
   margin-bottom: 8px;
 }
 
-.service-card h3 {
-  font-size: .94rem;
-  line-height: 1.3;
-  text-transform: uppercase;
+.service-title h3 {
+  font-size: .9rem;
   font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.3;
 }
 
-.service-arrow {
+.service-title span {
   color: var(--yellow);
-  font-size: 1.15rem;
+  font-size: 1.2rem;
 }
 
-.service-card p {
-  font-size: .82rem;
+.service-body p {
   color: #c3c7c9;
+  font-size: .82rem;
 }
 
-.service-card .service-link {
+.service-link {
   display: inline-block;
   color: var(--yellow);
-  font-size: .78rem;
+  font-size: .76rem;
   font-weight: 800;
   margin-top: 12px;
 }
 
-/* PROJECT GALLERY */
+/* PROJECTS */
 
 .projects-section {
   padding: 55px 0 60px;
@@ -430,7 +402,7 @@ section {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(5,minmax(0,1fr));
   gap: 14px;
 }
 
@@ -439,15 +411,15 @@ section {
   cursor: pointer;
 }
 
-.project-card .project-image {
-  aspect-ratio: 4 / 3;
+.project-image {
+  aspect-ratio: 4/3;
   overflow: hidden;
-  background: #24282a;
+  border: 1px solid #353a3d;
   border-radius: 4px;
-  border: 1px solid #363a3d;
+  background: #202426;
 }
 
-.project-card img {
+.project-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -455,58 +427,58 @@ section {
 }
 
 .project-card:hover img {
-  transform: scale(1.06);
+  transform: scale(1.05);
 }
 
 .project-label {
   display: block;
   padding: 8px 3px 0;
-  font-size: .75rem;
+  font-size: .74rem;
   font-weight: 900;
   text-transform: uppercase;
 }
 
 .project-description {
-  padding: 1px 3px;
-  color: #b6b9bb;
+  padding: 0 3px;
   font-size: .78rem;
+  color: var(--gray);
 }
 
-.project-gallery-link {
-  margin-top: 25px;
+.center-button {
   text-align: center;
+  margin-top: 25px;
 }
 
-/* FULL GALLERIES */
+/* PHOTO GALLERIES */
 
-.full-gallery-section {
-  padding: 65px 0;
+.gallery-section {
+  padding: 60px 0;
   background: #111416;
-  border-top: 1px solid #292d2f;
+  border-top: 1px solid #2c3032;
 }
 
-.full-gallery-section:nth-of-type(even) {
-  background: #0b0d0e;
+.gallery-section.alt {
+  background: #090b0c;
 }
 
-.gallery-note {
+.gallery-description {
   max-width: 700px;
-  color: #aeb3b6;
   margin: 12px 0 28px;
+  color: var(--gray);
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(4,minmax(0,1fr));
   gap: 14px;
 }
 
 .gallery-item {
   position: relative;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4/3;
   overflow: hidden;
-  border-radius: 4px;
   border: 1px solid #34393b;
+  border-radius: 4px;
   background: #202426;
   cursor: pointer;
 }
@@ -524,27 +496,24 @@ section {
 
 .gallery-label {
   position: absolute;
-  left: 9px;
-  bottom: 9px;
+  left: 8px;
+  bottom: 8px;
   padding: 4px 8px;
-  color: #fff;
-  background: rgba(0,0,0,.78);
+  background: rgba(0,0,0,.8);
+  border-left: 2px solid var(--yellow);
   font-size: .68rem;
   font-weight: 800;
-  border-left: 2px solid var(--yellow);
 }
 
-/* ABOUT / QUALITY */
+/* ABOUT */
 
 .about-section {
-  position: relative;
-  padding: 52px 0;
+  padding: 55px 0;
   background:
-    linear-gradient(90deg, rgba(7,9,10,.97), rgba(7,9,10,.83)),
+    linear-gradient(90deg,rgba(5,7,8,.96),rgba(5,7,8,.78)),
     url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80")
-    center / cover;
-  border-top: 1px solid #353535;
-  border-bottom: 1px solid #353535;
+    center/cover;
+  border-block: 1px solid #303436;
 }
 
 .about-layout {
@@ -555,15 +524,14 @@ section {
 }
 
 .about-copy p {
-  margin-top: 14px;
+  margin-top: 15px;
   max-width: 580px;
   color: #d0d3d4;
 }
 
 .quality-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
+  grid-template-columns: repeat(4,1fr);
 }
 
 .quality-item {
@@ -585,7 +553,7 @@ section {
 
 .quality-item strong {
   display: block;
-  font-size: .76rem;
+  font-size: .75rem;
   line-height: 1.35;
   text-transform: uppercase;
 }
@@ -595,19 +563,19 @@ section {
 .contact-section {
   padding: 60px 0;
   background:
-    linear-gradient(90deg, rgba(7,9,10,.98), rgba(7,9,10,.91)),
+    linear-gradient(90deg,rgba(5,7,8,.98),rgba(5,7,8,.88)),
     url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80")
-    center / cover;
+    center/cover;
 }
 
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 45px;
   align-items: start;
 }
 
-.contact-copy > p {
+.contact-copy p {
   margin-top: 14px;
   max-width: 480px;
   color: #c9cdcf;
@@ -626,25 +594,24 @@ section {
   overflow-wrap: anywhere;
 }
 
-.contact-detail .detail-icon {
+.detail-icon {
   color: var(--yellow);
-  font-size: 1.3rem;
   width: 28px;
+  font-size: 1.3rem;
   text-align: center;
 }
 
 .contact-form {
   padding: 23px;
-  background: rgba(12,14,15,.94);
+  background: rgba(12,14,15,.96);
   border: 1px solid #424648;
   border-radius: 6px;
-  box-shadow: 0 15px 45px rgba(0,0,0,.25);
 }
 
 .contact-form h3 {
-  font-size: 1.2rem;
-  text-transform: uppercase;
+  font-size: 1.15rem;
   margin-bottom: 16px;
+  text-transform: uppercase;
 }
 
 .form-grid {
@@ -654,21 +621,21 @@ section {
 }
 
 .contact-form input,
-.contact-form textarea,
-.contact-form select {
+.contact-form select,
+.contact-form textarea {
   width: 100%;
   min-width: 0;
   padding: 12px;
-  color: white;
+  color: #fff;
   background: #1c2022;
   border: 1px solid #494e51;
   border-radius: 4px;
-  font-size: .87rem;
+  font-size: .88rem;
 }
 
 .contact-form input:focus,
-.contact-form textarea:focus,
-.contact-form select:focus {
+.contact-form select:focus,
+.contact-form textarea:focus {
   outline: 1px solid var(--yellow);
   border-color: var(--yellow);
 }
@@ -683,38 +650,40 @@ section {
   margin-top: 10px;
 }
 
-.form-full {
-  grid-column: 1 / -1;
-}
-
-.contact-form .btn {
+.contact-form button {
   width: 100%;
   margin-top: 12px;
+}
+
+.form-note {
+  margin-top: 10px;
+  font-size: .73rem;
+  color: #aeb3b6;
 }
 
 /* FOOTER */
 
 footer {
-  padding: 25px 20px;
+  padding: 25px 18px;
   text-align: center;
-  color: #9a9fa2;
+  color: #a0a5a7;
   background: #070809;
   border-top: 1px solid #303436;
-  font-size: .83rem;
+  font-size: .82rem;
 }
 
 footer strong {
   color: var(--yellow);
 }
 
-/* IMAGE LIGHTBOX */
+/* IMAGE VIEWER */
 
 .modal {
   display: none;
   position: fixed;
-  z-index: 5000;
   inset: 0;
-  padding: 55px 18px 25px;
+  z-index: 5000;
+  padding: 55px 18px 35px;
   align-items: center;
   justify-content: center;
   background: rgba(0,0,0,.96);
@@ -726,60 +695,54 @@ footer strong {
 
 .modal img {
   max-width: 95vw;
-  max-height: 88vh;
+  max-height: 85vh;
   object-fit: contain;
-  border-radius: 4px;
 }
 
 .modal-close {
   position: absolute;
-  top: 12px;
+  top: 8px;
   right: 22px;
-  background: transparent;
   color: white;
+  background: transparent;
   border: 0;
-  font-size: 40px;
+  font-size: 42px;
   cursor: pointer;
 }
 
 .modal-caption {
   position: absolute;
-  bottom: 10px;
+  bottom: 8px;
   left: 15px;
   right: 15px;
-  color: #ddd;
   text-align: center;
-  font-size: .85rem;
+  color: #ddd;
+  font-size: .84rem;
 }
 
-/* FLOATING WHATSAPP */
+/* WHATSAPP */
 
 .whatsapp-float {
   position: fixed;
   z-index: 900;
-  right: 22px;
-  bottom: 22px;
+  right: 20px;
+  bottom: 20px;
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 8px;
   padding: 12px 17px;
   color: #111;
   background: var(--yellow);
   border: 2px solid #111;
   border-radius: 50px;
+  font-size: .83rem;
   font-weight: 900;
-  font-size: .84rem;
   box-shadow: 0 5px 22px rgba(0,0,0,.35);
-  transition: transform .2s;
-}
-
-.whatsapp-float:hover {
-  transform: translateY(-3px);
 }
 
 /* TABLET */
 
-@media (max-width: 1050px) {
+@media(max-width:1050px) {
   .container {
     padding-left: 25px;
     padding-right: 25px;
@@ -792,31 +755,27 @@ footer strong {
   }
 
   nav {
-    gap: 14px;
+    gap: 13px;
   }
 
   nav a {
-    font-size: .7rem;
+    font-size: .68rem;
   }
 
   .nav-phone {
     display: none;
   }
 
-  .hero-trust {
-    right: 25px;
-  }
-
   .services-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2,minmax(0,1fr));
   }
 
   .project-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3,minmax(0,1fr));
   }
 
   .gallery {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3,minmax(0,1fr));
   }
 
   .about-layout {
@@ -824,26 +783,29 @@ footer strong {
   }
 }
 
-/* MOBILE */
+/* PHONE */
 
-@media (max-width: 650px) {
+@media(max-width:650px) {
+  html {
+    scroll-padding-top: 105px;
+  }
+
   .container {
     padding-left: 17px;
     padding-right: 17px;
   }
 
   .nav {
-    min-height: auto;
-    padding: 10px 15px;
-    gap: 10px;
+    padding: 9px 12px;
+    gap: 9px;
   }
 
   .brand {
     margin: auto;
-    gap: 9px;
+    gap: 8px;
   }
 
-  .nav-logo {
+  .brand img {
     width: 48px;
     height: 42px;
   }
@@ -853,39 +815,35 @@ footer strong {
   }
 
   .brand-copy span {
-    font-size: .6rem;
-    letter-spacing: 2px;
+    font-size: .58rem;
+    letter-spacing: 1.8px;
   }
 
   nav {
     width: 100%;
-    gap: 0;
     justify-content: space-around;
-    padding-top: 8px;
+    gap: 0;
+    padding-top: 7px;
     border-top: 1px solid #292d2f;
   }
 
   nav a {
-    font-size: .63rem;
-    padding: 6px 3px;
+    font-size: .62rem;
+    padding: 5px 2px;
   }
 
   .hero {
-    min-height: 470px;
+    min-height: 465px;
     background-position: 58% center;
   }
 
   .hero-content {
-    padding: 48px 20px;
-  }
-
-  .hero-copy {
-    max-width: 100%;
+    padding: 44px 20px;
   }
 
   .hero h1 {
-    font-size: clamp(2.35rem, 11vw, 3.6rem);
-    letter-spacing: -1px;
+    font-size: clamp(2.35rem,10.5vw,3.6rem);
+    letter-spacing: -.9px;
   }
 
   .hero-location {
@@ -893,17 +851,17 @@ footer strong {
   }
 
   .hero-kicker {
-    font-size: .76rem;
-    letter-spacing: 1.5px;
+    font-size: .74rem;
+    letter-spacing: 1.2px;
   }
 
   .hero-subtitle {
-    font-size: .78rem;
-    letter-spacing: 1px;
+    font-size: .76rem;
+    letter-spacing: .7px;
   }
 
   .hero-description {
-    font-size: .91rem;
+    font-size: .9rem;
   }
 
   .hero-buttons {
@@ -912,85 +870,81 @@ footer strong {
     max-width: 330px;
   }
 
-  .hero-buttons .btn {
-    width: 100%;
-  }
-
   .hero-trust {
     display: none;
   }
 
   .services-section,
   .projects-section,
-  .full-gallery-section,
+  .gallery-section,
   .contact-section {
-    padding-top: 43px;
-    padding-bottom: 43px;
+    padding-top: 42px;
+    padding-bottom: 42px;
   }
 
   .section-top {
-    align-items: flex-start;
     flex-direction: column;
+    align-items: flex-start;
     gap: 12px;
   }
 
-  .section-top .section-intro {
-    font-size: .87rem;
-  }
-
-  .section-heading {
+  .heading {
     font-size: 1.9rem;
   }
 
+  .section-intro {
+    font-size: .87rem;
+  }
+
   .services-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2,minmax(0,1fr));
     gap: 10px;
   }
 
   .service-image {
-    height: 115px;
+    height: 112px;
   }
 
   .service-body {
-    padding: 11px;
+    padding: 10px;
   }
 
-  .service-card h3 {
-    font-size: .79rem;
+  .service-title h3 {
+    font-size: .77rem;
   }
 
-  .service-card p {
-    font-size: .76rem;
+  .service-body p {
+    font-size: .74rem;
   }
 
-  .service-arrow {
-    font-size: .95rem;
+  .service-link {
+    font-size: .69rem;
   }
 
   .project-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 11px;
   }
 
   .gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2,minmax(0,1fr));
     gap: 9px;
   }
 
   .gallery-label {
+    font-size: .57rem;
     left: 5px;
     bottom: 5px;
-    font-size: .58rem;
     padding: 3px 5px;
   }
 
   .about-section {
-    padding: 43px 0;
+    padding: 42px 0;
   }
 
   .quality-grid {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 18px;
   }
 
   .quality-item:nth-child(2) {
@@ -998,7 +952,7 @@ footer strong {
   }
 
   .quality-item strong {
-    font-size: .72rem;
+    font-size: .7rem;
   }
 
   .contact-layout {
@@ -1007,34 +961,26 @@ footer strong {
   }
 
   .contact-form {
-    padding: 17px;
-  }
-
-  .contact-form h3 {
-    font-size: 1.05rem;
+    padding: 16px;
   }
 
   .contact-form input,
-  .contact-form textarea,
-  .contact-form select {
+  .contact-form select,
+  .contact-form textarea {
     font-size: 16px;
   }
 
   .whatsapp-float {
     right: 12px;
     bottom: 12px;
-    padding: 11px 14px;
-    font-size: .78rem;
+    padding: 10px 13px;
+    font-size: .76rem;
   }
 }
 
-@media (max-width: 360px) {
+@media(max-width:360px) {
   nav a {
-    font-size: .57rem;
-  }
-
-  .brand-copy strong {
-    font-size: .9rem;
+    font-size: .55rem;
   }
 
   .services-grid {
@@ -1042,22 +988,11 @@ footer strong {
   }
 
   .service-image {
-    height: 170px;
+    height: 160px;
   }
 
   .form-grid {
     grid-template-columns: 1fr;
-  }
-
-  .form-full {
-    grid-column: auto;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    scroll-behavior: auto !important;
-    transition-duration: .01ms !important;
   }
 }
 </style>
@@ -1065,14 +1000,15 @@ footer strong {
 
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="nav">
 
-    <a class="brand" href="#home" aria-label="Modern House Home">
-      <img class="nav-logo"
-           src="images/modern-house-logo.jpeg"
-           alt="Modern House logo">
+    <a class="brand" href="#home" aria-label="Modern House home">
+      <!-- LOGO: file is in repository root -->
+      <img src="modern-house-logo.jpeg"
+           alt="Modern House General Contractor logo"
+           onerror="this.style.display='none'">
+
       <span class="brand-copy">
         <strong>MODERN HOUSE</strong>
         <span>GENERAL CONTRACTOR</span>
@@ -1089,22 +1025,25 @@ footer strong {
 
     <a class="btn btn-primary nav-phone"
        href="tel:+19157039824">
-      ☎ &nbsp;(915) 703-9824
+      ☎ &nbsp; (915) 703-9824
     </a>
 
   </div>
 </header>
 
-<!-- HERO -->
-<main id="home">
+<main>
 
-<section class="hero">
+<!-- HERO -->
+
+<section class="hero" id="home">
   <div class="hero-content">
     <div class="hero-copy">
 
       <div class="hero-location">El Paso, Texas</div>
 
-      <div class="hero-kicker">Build &nbsp;|&nbsp; Remodel &nbsp;|&nbsp; Transform</div>
+      <div class="hero-kicker">
+        Build &nbsp;|&nbsp; Remodel &nbsp;|&nbsp; Transform
+      </div>
 
       <h1>
         Modern House
@@ -1136,29 +1075,22 @@ footer strong {
   </div>
 
   <div class="hero-trust">
-    <div class="trust-item">
-      <span class="trust-icon">▦</span> Commercial
-    </div>
-    <div class="trust-item">
-      <span class="trust-icon">⌂</span> Residential
-    </div>
-    <div class="trust-item">
-      <span class="trust-icon">◇</span> Quality Work
-    </div>
-    <div class="trust-item">
-      <span class="trust-icon">✓</span> Reliable Service
-    </div>
+    <div class="trust-item"><span>▦</span> Commercial</div>
+    <div class="trust-item"><span>⌂</span> Residential</div>
+    <div class="trust-item"><span>◇</span> Quality Work</div>
+    <div class="trust-item"><span>✓</span> Reliable Service</div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="services-section">
+
+<section class="services-section" id="services">
   <div class="container">
 
     <div class="section-top">
       <div>
         <div class="eyebrow">Our Services</div>
-        <h2 class="section-heading">
+        <h2 class="heading">
           Complete Construction<br>
           and <span>Remodeling Services</span>
         </h2>
@@ -1175,15 +1107,13 @@ footer strong {
 
       <a class="service-card" href="#epoxy">
         <div class="service-image">
-          <img
-            src="images/epoxy/epoxy-01.jpeg"
-            alt="Decorative epoxy flooring"
-            loading="lazy">
+          <img src="images/epoxy-1.jpeg"
+               alt="Epoxy flooring"
+               loading="lazy">
         </div>
         <div class="service-body">
-          <div class="service-title-row">
-            <h3>Epoxy Flooring</h3>
-            <span class="service-arrow">→</span>
+          <div class="service-title">
+            <h3>Epoxy Flooring</h3><span>→</span>
           </div>
           <p>Epoxy flakes, marble effects and durable floor finishes.</p>
           <span class="service-link">VIEW PROJECTS →</span>
@@ -1192,15 +1122,13 @@ footer strong {
 
       <a class="service-card" href="#total-home-renovation">
         <div class="service-image">
-          <img
-            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=80"
-            alt="Modern interior remodeling"
-            loading="lazy">
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80"
+               alt="Modern remodeling"
+               loading="lazy">
         </div>
         <div class="service-body">
-          <div class="service-title-row">
-            <h3>General Remodeling</h3>
-            <span class="service-arrow">→</span>
+          <div class="service-title">
+            <h3>General Remodeling</h3><span>→</span>
           </div>
           <p>Interior and exterior renovations for homes and businesses.</p>
           <span class="service-link">VIEW PROJECTS →</span>
@@ -1209,15 +1137,13 @@ footer strong {
 
       <a class="service-card" href="#total-home-renovation">
         <div class="service-image">
-          <img
-            src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=700&q=80"
-            alt="Interior renovation"
-            loading="lazy">
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80"
+               alt="Interior renovation"
+               loading="lazy">
         </div>
         <div class="service-body">
-          <div class="service-title-row">
-            <h3>Total Home Renovation</h3>
-            <span class="service-arrow">→</span>
+          <div class="service-title">
+            <h3>Total Home Renovation</h3><span>→</span>
           </div>
           <p>Complete renovation projects and finishing details.</p>
           <span class="service-link">VIEW PROJECTS →</span>
@@ -1226,15 +1152,13 @@ footer strong {
 
       <a class="service-card" href="#contact">
         <div class="service-image">
-          <img
-            src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=700&q=80"
-            alt="Professional painting"
-            loading="lazy">
+          <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=80"
+               alt="Protective coating and finishing"
+               loading="lazy">
         </div>
         <div class="service-body">
-          <div class="service-title-row">
-            <h3>Urethane Coating</h3>
-            <span class="service-arrow">→</span>
+          <div class="service-title">
+            <h3>Urethane Coating</h3><span>→</span>
           </div>
           <p>Protective topcoats for floors and high-traffic areas.</p>
           <span class="service-link">REQUEST ESTIMATE →</span>
@@ -1243,32 +1167,28 @@ footer strong {
 
       <a class="service-card" href="#contact">
         <div class="service-image">
-          <img
-            src="https://images.unsplash.com/photo-1562259949-2e9a3e7d0c5a?auto=format&fit=crop&w=700&q=80"
-            alt="Interior painting project"
-            loading="lazy">
+          <img src="https://images.unsplash.com/photo-1562259949-2e9a3e7d0c5a?auto=format&fit=crop&w=800&q=80"
+               alt="Professional painting"
+               loading="lazy">
         </div>
         <div class="service-body">
-          <div class="service-title-row">
-            <h3>Painting</h3>
-            <span class="service-arrow">→</span>
+          <div class="service-title">
+            <h3>Painting</h3><span>→</span>
           </div>
-          <p>Interior and exterior painting with clean, professional finishes.</p>
+          <p>Interior and exterior painting with professional finishes.</p>
           <span class="service-link">REQUEST ESTIMATE →</span>
         </div>
       </a>
 
       <a class="service-card" href="#contact">
         <div class="service-image">
-          <img
-            src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=700&q=80"
-            alt="Interior wall finishing"
-            loading="lazy">
+          <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80"
+               alt="Interior wall finishing"
+               loading="lazy">
         </div>
         <div class="service-body">
-          <div class="service-title-row">
-            <h3>Drywall</h3>
-            <span class="service-arrow">→</span>
+          <div class="service-title">
+            <h3>Drywall</h3><span>→</span>
           </div>
           <p>Installation, repairs, surface preparation and finishing.</p>
           <span class="service-link">REQUEST ESTIMATE →</span>
@@ -1277,15 +1197,13 @@ footer strong {
 
       <a class="service-card" href="#projects">
         <div class="service-image">
-          <img
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80"
-            alt="Commercial building"
-            loading="lazy">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+               alt="Commercial building"
+               loading="lazy">
         </div>
         <div class="service-body">
-          <div class="service-title-row">
-            <h3>Commercial Projects</h3>
-            <span class="service-arrow">→</span>
+          <div class="service-title">
+            <h3>Commercial Projects</h3><span>→</span>
           </div>
           <p>Improvements and renovations for commercial properties.</p>
           <span class="service-link">VIEW PROJECTS →</span>
@@ -1297,74 +1215,72 @@ footer strong {
 </section>
 
 <!-- RECENT PROJECTS -->
-<section id="projects" class="projects-section">
+
+<section class="projects-section" id="projects">
   <div class="container">
 
     <div class="section-top">
       <div>
         <div class="eyebrow">Our Work</div>
-        <h2 class="section-heading">
-          Recent <span>Projects</span>
-        </h2>
+        <h2 class="heading">Recent <span>Projects</span></h2>
       </div>
-
       <a class="btn btn-outline" href="#epoxy">
-        View All Projects &nbsp; →
+        View All Projects →
       </a>
     </div>
 
-    <div class="project-grid">
+    <div class="project-grid" id="featured-projects">
 
       <a class="project-card" href="#epoxy">
         <div class="project-image">
-          <img src="images/epoxy/epoxy-01.jpeg"
-               alt="Epoxy floor project" loading="lazy">
+          <img src="images/epoxy-1.jpeg"
+               alt="Epoxy floor project">
         </div>
         <span class="project-label">Epoxy Floors</span>
-        <p class="project-description">Decorative Floor Finishes</p>
+        <p class="project-description">Decorative floor finishes</p>
       </a>
 
       <a class="project-card" href="#epoxy">
         <div class="project-image">
-          <img src="images/epoxy/epoxy-02.jpeg"
-               alt="Epoxy flooring project" loading="lazy">
+          <img src="images/epoxy-2.jpeg"
+               alt="Epoxy flooring project">
         </div>
         <span class="project-label">Epoxy Flooring</span>
-        <p class="project-description">Protective Floor Systems</p>
+        <p class="project-description">Protective floor systems</p>
       </a>
 
       <a class="project-card" href="#total-home-renovation">
         <div class="project-image">
-          <img src="images/total-home-renovation/total-home-renovation-001.jpg"
-               alt="Renovation project" loading="lazy">
+          <img src="images/Total-home-renovation/total-home-renovation-001.jpg"
+               alt="Home renovation project">
         </div>
         <span class="project-label">Remodeling</span>
-        <p class="project-description">Interior Renovation</p>
+        <p class="project-description">Interior renovation</p>
       </a>
 
       <a class="project-card" href="#total-home-renovation">
         <div class="project-image">
-          <img src="images/total-home-renovation/total-home-renovation-002.jpg"
-               alt="Home renovation project" loading="lazy">
+          <img src="images/Total-home-renovation/total-home-renovation-002.jpg"
+               alt="Renovation project">
         </div>
         <span class="project-label">Renovation</span>
-        <p class="project-description">Residential Projects</p>
+        <p class="project-description">Residential projects</p>
       </a>
 
       <a class="project-card" href="#total-home-renovation">
         <div class="project-image">
-          <img src="images/total-home-renovation/total-home-renovation-003.jpg"
-               alt="Interior project" loading="lazy">
+          <img src="images/Total-home-renovation/total-home-renovation-003.jpg"
+               alt="Interior renovation">
         </div>
         <span class="project-label">Interior Work</span>
-        <p class="project-description">Finishing Details</p>
+        <p class="project-description">Finishing details</p>
       </a>
 
     </div>
 
-    <div class="project-gallery-link">
+    <div class="center-button">
       <a class="btn btn-primary" href="#epoxy">
-        Explore Our Work &nbsp; →
+        Explore Our Work →
       </a>
     </div>
 
@@ -1372,49 +1288,50 @@ footer strong {
 </section>
 
 <!-- EPOXY GALLERY -->
-<section id="epoxy" class="full-gallery-section">
+
+<section class="gallery-section" id="epoxy">
   <div class="container">
 
     <div class="eyebrow">Our Portfolio</div>
-    <h2 class="section-heading">Epoxy <span>Floors</span></h2>
+    <h2 class="heading">Epoxy <span>Floors</span></h2>
 
-    <p class="gallery-note">
-      Explore our epoxy flooring projects, including decorative flakes,
-      marble effects and durable protective finishes. Select a photo
+    <p class="gallery-description">
+      Explore our epoxy flooring projects, including decorative
+      flakes, marble effects and protective finishes. Select a photo
       to view it in full size.
     </p>
 
-    <div id="gallery" class="gallery"></div>
+    <div class="gallery" id="epoxy-gallery"></div>
 
   </div>
 </section>
 
 <!-- RENOVATION GALLERY -->
-<section id="total-home-renovation" class="full-gallery-section">
+
+<section class="gallery-section alt" id="total-home-renovation">
   <div class="container">
 
     <div class="eyebrow">Residential &amp; Commercial</div>
-    <h2 class="section-heading">
-      Total Home <span>Renovation</span>
-    </h2>
+    <h2 class="heading">Total Home <span>Renovation</span></h2>
 
-    <p class="gallery-note">
+    <p class="gallery-description">
       Explore our renovation projects and finishing details.
-      Select any photo to view it in full size.
+      Select a photo to view it in full size.
     </p>
 
-    <div id="renovation-gallery" class="gallery"></div>
+    <div class="gallery" id="renovation-gallery"></div>
 
   </div>
 </section>
 
-<!-- ABOUT / QUALITY -->
-<section id="about" class="about-section">
+<!-- ABOUT -->
+
+<section class="about-section" id="about">
   <div class="container about-layout">
 
     <div class="about-copy">
       <div class="eyebrow">Why Choose Modern House</div>
-      <h2 class="section-heading">
+      <h2 class="heading">
         Built on Quality<br>
         and <span>Trust</span>
       </h2>
@@ -1457,19 +1374,18 @@ footer strong {
       </div>
 
     </div>
-
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact-section">
+
+<section class="contact-section" id="contact">
   <div class="container contact-layout">
 
     <div class="contact-copy">
-
       <div class="eyebrow">Contact Us</div>
 
-      <h2 class="section-heading">
+      <h2 class="heading">
         Let's Build Your<br>
         <span>Next Project</span>
       </h2>
@@ -1487,7 +1403,8 @@ footer strong {
           <strong>(915) 703-9824</strong>
         </a>
 
-        <a class="contact-detail" href="mailto:nasrkamel642@gmail.com">
+        <a class="contact-detail"
+           href="mailto:nasrkamel642@gmail.com">
           <span class="detail-icon">✉</span>
           <span>nasrkamel642@gmail.com</span>
         </a>
@@ -1498,32 +1415,28 @@ footer strong {
         </div>
 
       </div>
-
     </div>
 
-    <form class="contact-form"
-          id="estimate-form">
-
+    <form class="contact-form" id="estimate-form">
       <h3>Request a Free Estimate</h3>
 
       <div class="form-grid">
-
-        <input type="text"
-               name="name"
+        <input name="name"
+               type="text"
                placeholder="Name"
                aria-label="Name"
                autocomplete="name"
                required>
 
-        <input type="tel"
-               name="phone"
+        <input name="phone"
+               type="tel"
                placeholder="Phone"
                aria-label="Phone"
                autocomplete="tel"
                required>
 
-        <input type="email"
-               name="email"
+        <input name="email"
+               type="email"
                placeholder="Email"
                aria-label="Email"
                autocomplete="email">
@@ -1539,9 +1452,7 @@ footer strong {
           <option>Painting</option>
           <option>Drywall</option>
           <option>Commercial Project</option>
-          <option>Other Existing Service</option>
         </select>
-
       </div>
 
       <textarea name="message"
@@ -1553,10 +1464,9 @@ footer strong {
         ➤ &nbsp; Send Message
       </button>
 
-      <p style="font-size:.73rem;color:#aeb3b6;margin-top:10px">
+      <p class="form-note">
         This form opens WhatsApp with your project details.
       </p>
-
     </form>
 
   </div>
@@ -1564,14 +1474,12 @@ footer strong {
 
 </main>
 
-<!-- FOOTER -->
 <footer>
-  © <span id="year">2026</span>
+  © <span id="year"></span>
   <strong>Modern House General Contractor</strong>
   — El Paso, Texas
 </footer>
 
-<!-- WHATSAPP BUTTON -->
 <a class="whatsapp-float"
    href="https://wa.me/19157039824"
    target="_blank"
@@ -1580,7 +1488,8 @@ footer strong {
   ◉ &nbsp; WhatsApp
 </a>
 
-<!-- IMAGE LIGHTBOX -->
+<!-- IMAGE VIEWER -->
+
 <div id="modal"
      class="modal"
      role="dialog"
@@ -1593,118 +1502,108 @@ footer strong {
           aria-label="Close photo"
           onclick="closeModal(event)">×</button>
 
-  <img id="modalImage"
-       src=""
-       alt="Modern House project photo">
-
+  <img id="modalImage" src="" alt="Project photo">
   <div id="modalCaption" class="modal-caption"></div>
-
 </div>
 
 <script>
 "use strict";
 
 /*
-  KEEP YOUR EXISTING IMAGE FOLDERS AND FILE NAMES.
+  IMAGE PATHS
 
-  Epoxy:
-  images/epoxy/epoxy-01.jpeg through epoxy-35.jpeg
+  Logo:
+  modern-house-logo.jpeg
 
-  Renovation:
-  images/total-home-renovation/
-  total-home-renovation-001.jpg through
-  total-home-renovation-060.jpg
+  Epoxy photos:
+  images/epoxy-1.jpeg through images/epoxy-7.jpeg
+
+  Renovation photos:
+  images/Total-home-renovation/
+  total-home-renovation-001.jpg and onward.
+
+  GitHub filenames are case-sensitive.
 */
 
-const epoxyGallery = document.getElementById("gallery");
-const renovationGallery =
-  document.getElementById("renovation-gallery");
+function buildGallery(containerId, count, pathFunction, label) {
+  const container = document.getElementById(containerId);
 
-/* BUILD PHOTO GALLERIES */
-
-function addGalleryPhotos(
-  container,
-  count,
-  pathBuilder,
-  altBuilder,
-  labelBuilder
-) {
   for (let i = 1; i <= count; i++) {
     const item = document.createElement("div");
     item.className = "gallery-item";
 
     const img = document.createElement("img");
-    img.src = pathBuilder(i);
-    img.alt = altBuilder(i);
-    img.loading = i <= 4 ? "eager" : "lazy";
+    img.src = pathFunction(i);
+    img.alt = label + " project " + i;
+    img.loading = "lazy";
     img.decoding = "async";
 
     img.onerror = function () {
       item.remove();
     };
 
-    const label = document.createElement("div");
-    label.className = "gallery-label";
-    label.textContent = labelBuilder(i);
+    const caption = document.createElement("div");
+    caption.className = "gallery-label";
+    caption.textContent = label + " " + i;
 
     item.appendChild(img);
-    item.appendChild(label);
+    item.appendChild(caption);
+    container.appendChild(item);
 
     item.addEventListener("click", function () {
-      if (img.complete && img.naturalWidth > 0) {
+      if (img.naturalWidth > 0) {
         openModal(img.src, img.alt);
       }
     });
-
-    container.appendChild(item);
   }
 }
 
-/* EPOXY PHOTOS */
+/* Seven epoxy images in the images folder */
 
-addGalleryPhotos(
-  epoxyGallery,
-  35,
+buildGallery(
+  "epoxy-gallery",
+  7,
   function (i) {
-    return "images/epoxy/epoxy-" +
-      String(i).padStart(2, "0") + ".jpeg";
+    return "images/epoxy-" + i + ".jpeg";
   },
-  function (i) {
-    return "Modern House epoxy flooring project " + i;
-  },
-  function (i) {
-    return "EPOXY PROJECT " + i;
-  }
+  "EPOXY"
 );
 
-/* RENOVATION PHOTOS */
+/* Renovation gallery: missing images are automatically removed */
 
-addGalleryPhotos(
-  renovationGallery,
+buildGallery(
+  "renovation-gallery",
   60,
   function (i) {
-    return "images/total-home-renovation/" +
+    return "images/Total-home-renovation/" +
       "total-home-renovation-" +
       String(i).padStart(3, "0") + ".jpg";
   },
-  function (i) {
-    return "Modern House renovation project " + i;
-  },
-  function (i) {
-    return "RENOVATION " + i;
-  }
+  "RENOVATION"
 );
 
-/* PHOTO VIEWER */
+/* Hide featured cards whose local photos do not exist */
+
+document.querySelectorAll(
+  "#featured-projects img"
+).forEach(function (img) {
+  img.addEventListener("error", function () {
+    img.closest(".project-card").style.display = "none";
+  }, { once: true });
+
+  if (img.complete && img.naturalWidth === 0) {
+    img.closest(".project-card").style.display = "none";
+  }
+});
+
+/* IMAGE VIEWER */
 
 function openModal(src, alt) {
   const modal = document.getElementById("modal");
-  const image = document.getElementById("modalImage");
-  const caption = document.getElementById("modalCaption");
 
-  image.src = src;
-  image.alt = alt;
-  caption.textContent = alt;
+  document.getElementById("modalImage").src = src;
+  document.getElementById("modalImage").alt = alt;
+  document.getElementById("modalCaption").textContent = alt;
 
   modal.classList.add("open");
   document.body.style.overflow = "hidden";
@@ -1725,41 +1624,38 @@ function closeModal(event) {
 
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
-    document.getElementById("modal").classList.remove("open");
-    document.getElementById("modalImage").src = "";
-    document.getElementById("modalCaption").textContent = "";
-    document.body.style.overflow = "";
+    closeModal();
   }
 });
 
-/* FREE ESTIMATE FORM -> WHATSAPP */
+/* ESTIMATE FORM -> WHATSAPP */
 
 document.getElementById("estimate-form")
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const form = event.currentTarget;
-    const data = new FormData(form);
+    const data = new FormData(event.currentTarget);
 
-    const name = (data.get("name") || "").toString().trim();
-    const phone = (data.get("phone") || "").toString().trim();
-    const email = (data.get("email") || "").toString().trim();
-    const project = (data.get("project") || "").toString().trim();
-    const message = (data.get("message") || "").toString().trim();
+    const name = String(data.get("name") || "").trim();
+    const phone = String(data.get("phone") || "").trim();
+    const email = String(data.get("email") || "").trim();
+    const project = String(data.get("project") || "").trim();
+    const message = String(data.get("message") || "").trim();
 
     const text = [
       "Hello Modern House General Contractor!",
       "",
-      "I would like a free project estimate.",
+      "I would like a free estimate.",
       "",
       "Name: " + name,
       "Phone: " + phone,
       "Email: " + (email || "Not provided"),
-      "Project type: " + project,
-      "Project details: " + message
+      "Project: " + project,
+      "Details: " + message
     ].join("\n");
 
-    const url = "https://wa.me/19157039824?text=" +
+    const url =
+      "https://wa.me/19157039824?text=" +
       encodeURIComponent(text);
 
     window.open(url, "_blank", "noopener");
